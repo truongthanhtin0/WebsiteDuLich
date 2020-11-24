@@ -10,12 +10,17 @@
     box-sizing: inherit;
 }
 
+body{
+    background-color: #fafafa;
+}
+
 html{
     font-size: 62.5%;  
     line-height: 1.6rem;  
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
 
 .grid{
     width: 1400px;
