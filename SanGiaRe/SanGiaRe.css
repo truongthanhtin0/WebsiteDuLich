@@ -1,4 +1,3 @@
-
 .header{
     width: 100vw;
     height: 500px;
@@ -121,85 +120,191 @@
     margin: 0 auto;
 }
 
-/* Content */
-.grid1{
-    background-color: var(--white-color);
-}
-
-.content{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 100px;
-}
-
-.content__list{
+/* Body Fly */
+.flight__list{
     padding-left: 0;
-    list-style: none;
 }
 
-.content__list--item{
-    display: flex;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 3px #ccc;
-    border-radius: 2px;
-    margin: 20px 0;
-}
-
-.content__list--item-link{
-    text-decoration: none;
-    color: transparent;
-    width: 320px;
-    height: 160px;
-}
-
-.content__list--item-link-img{
-    height: 140px;
-    width: 280px;
-    object-fit: cover;
-    border-radius: 2px;
-    margin: 10px 20px;
-}
-
-.content__list--item-info{
-    margin: 30px 0;
-}
-
-.content__list--item-info-title{
-    text-decoration: none;
-    color: #183a57;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 10px 0;
-}
-
-.content__list--item-info-history{
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    margin: 10px 0;
-}
-
-.content__list--item-info-subhistory{
+.flight__list--item{
     display: flex;
     align-items: center;
-    margin-right: 16px;
+    justify-content: space-between;
+}
+
+.flight__list--item-name{
+    display: flex;
+    align-items: center;
+}
+
+.flight__list--item-name-h1{
+    margin-left: 16px;
+}
+
+.flight__list--item-name-icon{
+    margin: 0 16px;
+}
+
+.flight__list--item-name-p{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.flight__list--item-detail{
+    display: flex;
+    width: 50%;
+    /* justify-content: space-between; */
+    /* margin-right: 16px; */
+}
+
+.flight__list--item-detail-p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    flex: 1;
+    margin-left: 30px;
+}
+
+.flight__list--item-detail-price{
+    font-size: 2rem;
+    color: #cf1322;
+    font-weight: 700;
+    text-decoration: underline;
+    flex: 1;
+    text-align: center;
+}
+
+/* Body hot deal */
+.body1{
+    width: 80%;
+    margin: 0 auto 40px;
+    padding: 15px 50px 50px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #ccc;
+}
+
+.body2{
+    background-color: #fafafa;
+    border-radius: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.body__wrap{
+    display: flex;
+    justify-content: space-between;
+}   
+
+.body__wrap1{
+    margin-top: 40px;
+}
+
+.body__wrap--item{
+    flex-basis: 30%;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #ccc;
+}
+
+.wrapper{
+    min-height: 310px;
+}
+
+.body__wrap--item-img{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.body__wrap--item-h1{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-left: 8px;
+}
+
+.body__wrap--item-div{
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    margin: 16px 9px;
+}
+
+.body__wrap--item-div-p1{
     font-size: 1.4rem;
     color: var(--text-color);
-    opacity: 0.8;
+    margin: 0 16px 0 0;
 }
 
-.content__list--item-info-icon{
-    margin-right: 4px;
-}
-
-.content__list--item-info-specifically{
+.body__wrap--item-div-p2{
+    font-size: 1.4rem;
+    color: #ff8917;
     margin: 0;
 }
 
-.content__list--item-info-p{
-    font-size: 1.5rem;
-    color: var(--text-color);
-    margin: 10px 0;
+.body__wrap--item-div-p3{
+    font-size: 1.4rem;
+    color: #b7c154;
+    margin: 0;
+}
+
+.body__wrap--item-price{
+    margin-left: 8px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ff8917;
+}
+
+.body__wrap--item-btn{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    outline: none;
+    float: right;
+    margin: 10px 10px 10px 0;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.body__wrap--item-btn:hover{
+    opacity: 0.9;
+}
+
+
+/* Body Cam kết */
+
+.body__flight{
+    margin-top: 100px;
+}
+
+.body1__h1{
+    margin: 20px auto 30px;
+    font-size: 2.2rem;
+    color: #195688;
+    text-align: center;
+}
+
+.body1__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.body1__list--item{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    margin: 12px;
+}
+
+.body1__list--item-img{
+    margin-right: 8px;
+}
+
+.body1__list--item-p{
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 
@@ -361,7 +466,6 @@
     height: 30px;
     width: 150px;
 }
-
 /* Body footer */
 .footer{
     border-top: 4px solid var(--primary-color);

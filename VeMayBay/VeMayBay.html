@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vé Máy Bay</title>
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/slick-1.8.1//slick/slick.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="/font/fontawesome-free-5.14.0-web/css/all.min.css"
+  />
+  <link rel="stylesheet" href="VeMayBay.css" />
+  <link rel="stylesheet" href="../base.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="header__menu">
+            <div class="logo">
+              <a href="../TrangChu/TrangChu.html"><img src="/Image/logoDTU.png" alt="" /></a>
+            </div>
+            <div class="submenu">
+              <div class="submenu__1">
+                <div class="submenu__1--left">
+                  <p class="submenu__1--left-hotline">Hotline:</p>
+                  <p href="" class="submenu__1--left-phone">093.5633219</p>
+                </div>
+                <div class="submenu__1--right">
+                  <button
+                    class="submenu__1--right-account submenu__1--right-account-login"
+                    id="login"
+                  >
+                    Đăng nhập
+                  </button>
+                  <button
+                    class="submenu__1--right-account submenu__1--right-account-register"
+                    id="register"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+              </div>
+              <div class="submenu__2">
+                <a href="#" class="submenu__2--link">VÉ MÁY BAY</a>
+                <a href="../SanGiaRe/SanGiaRe.html" class="submenu__2--link">SĂN GIÁ RẺ</a>
+                <a href="" class="submenu__2--link">DỊCH VỤ</a>
+                <a href="../TinTuc/TinTuc.html" class="submenu__2--link">TIN TỨC</a>
+                <a href="" class="submenu__2--link">LIÊN HỆ</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="wrapper">
+            <div class="wrapper__heading">
+                <img src="../Image/fly__VMB.svg" alt="" class="wrapper__heading--img">
+                <p class="wrapper__heading--p">Máy bay</p>
+            </div>
+            <div class="wrapper__content">
+                <div class="wrapper__content--div1">
+                    <div class="wrapper__content--div1-radio">
+                        <input class="wrapper__content--div1-radio-input" type="radio" name="" id="">
+                        <p class="wrapper__content--div1-radio-p">Một chiều</p>
+                    </div>
+                    <div class="wrapper__content--div1-radio">
+                        <input class="wrapper__content--div1-radio-input" type="radio" name="" id="">
+                        <p class="wrapper__content--div1-radio-p">Khứ hồi</p>
+                    </div>
+                </div>
+                <div class="wrapper__content--div2">
+                    <div class="div2__go">
+                        <p class="div2__p">Điểm khởi hành</p>
+                        <div class="div2__start--div">
+                            <input class="div2__input" type="text" placeholder="Điểm khởi hành">
+                            <img src="../Image/search__VMB.svg" alt="" class="div2__start--div-img">
+                        </div> 
+                    </div>
+                    <img src="../Image/toggle__VMB.svg" alt="" class="div2__img">
+                    <div class="div2__go">
+                        <p class="div2__p">Điểm đến</p>
+                        <div class="div2__start--div">
+                            <input class="div2__input" type="text" placeholder="Điểm khởi hành">
+                            <img src="../Image/search__VMB.svg" alt="" class="div2__start--div-img">
+                        </div> 
+                    </div>
+                    <div class="div2__datetime">
+                        <p class="div2__p">Ngày đi</p>
+                        <input class="div2__input div2__input0" type="datetime-local" name="" id="">
+                    </div>
+                    <div class="div2__datetime">
+                        <p class="div2__p">Ngày về</p>
+                        <input class="div2__input div2__input0" type="datetime-local" name="" id="">
+                    </div>
+                    <div class="div2__passenger">
+                        <p class="div2__p div2__p0">Người lớn</p>
+                        <div class="div2__passenger--div">
+                            <p class="div2__passenger--div-p">1</p>
+                            <i class="fas fa-angle-down div2__passenger--div-icon"></i>
+                        </div>
+                    </div>
+                    <div class="div2__passenger">
+                        <p class="div2__p div2__p0">Trẻ em</p>
+                        <div class="div2__passenger--div">
+                            <p class="div2__passenger--div-p">0</p>
+                            <i class="fas fa-angle-down div2__passenger--div-icon"></i>
+                        </div>
+                    </div>
+                    <div class="div2__passenger">
+                        <p class="div2__p div2__p0">Trẻ sơ sinh</p>
+                        <div class="div2__passenger--div">
+                            <p class="div2__passenger--div-p">0</p>
+                            <i class="fas fa-angle-down div2__passenger--div-icon"></i>
+                        </div>
+                    </div>
+                    <button class="div2__btn">Tìm kiếm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="QR">
+      <div class="QR__content">
+        <img src="https://statics.vntrip.vn/logo/image_download_app.png" alt="" class="QR__content--img">
+        <div class="QR__content--div">
+          <h2 class="QR__content--div-h2">Theo dõi chuyến bay 24/7 cùng Vntrip App</h2>
+          <p class="QR__content--div-p">Theo dõi chuyến bay của các thành viên trong gia đình,
+             những người thân yêu như thể bạn đang đi du lịch cùng với họ, hoặc tìm được thời điểm tốt nhất để đón họ tại sân bay</p>
+        </div>
+      </div>
+      <div class="QR__download">
+        <img src="https://statics.vntrip.vn/logo/logo_QR_app.png" alt="" class="QR__download--img">
+        <p class="QR__download--p">QUÉT MÃ ĐỂ TẢI ỨNG DỤNG</p>
+      </div>
+    </div>
+
+    <div class="location">
+      <h1 class="location__h1">KHUYẾN MÃI HOT TRONG THÁNG</h1>
+      <div class="location__body">
+        <div class="location__body--top">
+          <div class="location__body--wrap">
+            <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2020/03/hon-yen-phu-yen.jpeg" alt="">
+            <div class="location__body--wrap-div">
+              <p class="location__body--wrap-div-p1">Hồ Chí Minh - Phú Quốc</p>
+              <p class="location__body--wrap-div-p2">199.000<span class="location__body--wrap-div-span">đ</span></p>
+            </div>
+          </div>  
+          <div class="location__body--wrap">
+            <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2017/10/11-2.jpg" alt="">
+            <div class="location__body--wrap-div">
+              <p class="location__body--wrap-div-p1">Hồ Chí Minh - Thanh Hóa</p>
+              <p class="location__body--wrap-div-p2">299.000<span class="location__body--wrap-div-span">đ</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="location__body--bottom">
+          <div class="location__body--wrap">
+            <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2018/01/eo-gio-quy-nhon-vntrip.jpg" alt="">
+            <div class="location__body--wrap-div">
+              <p class="location__body--wrap-div-p1">Hà Nội - Quy Nhơn</p>
+              <p class="location__body--wrap-div-p2">79.000<span class="location__body--wrap-div-span">đ</span></p>
+            </div>
+          </div> 
+          <div class="location__body--wrap">
+            <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2020/03/da-lat-anh-dep-thien-nhien-2020.jpg" alt="">
+            <div class="location__body--wrap-div">
+              <p class="location__body--wrap-div-p1">Đà Nẵng - Đà Lạt</p>
+              <p class="location__body--wrap-div-p2">99.000<span class="location__body--wrap-div-span">đ</span></p>
+            </div>
+          </div>
+          <div class="location__body--wrap">
+            <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2017/04/bai-dai-nha-trang.png" alt="" >
+            <div class="location__body--wrap-div">
+              <p class="location__body--wrap-div-p1">Hà Nội - Nha Trang</p>
+              <p class="location__body--wrap-div-p2">149.000<span class="location__body--wrap-div-span">đ</span></p>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <div class="sale">
+      <h1 class="location__h1">TOP COMBO KHUYẾN MÃI: VÉ MÁY BAY & KHÁCH SẠN</h1>
+      <div class="sale__body">
+        <div class="sale__body--item">
+          <img src="https://statics.vntrip.vn/uploads/deal/20201022_314860_2.jpg" alt="" class="sale__body--item-img">
+          <h1 class="sale__body--item-h1">[COMBO SAPA BAMBOO HOTEL] - PHÒNG NGHỈ & XE KHỨ HỒI KÈM ĂN NHẸ</h1>
+          <div class="sale__body--item-div1">
+            <i class="fas fa-map-marker-alt sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p">Phú Quốc</p>
+          </div>
+          <div class="sale__body--item-div1">
+            <i class="far fa-clock sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p"><b>88 </b>người mua</p>
+          </div>
+          <div class="sale__body--item-div2">
+            <p class="sale__body--item-div2-p">Chỉ từ</p>
+            <p class="sale__body--item-div2-price">869.000<span class="sale__body--item-div2-span">đ</span></p>
+          </div>
+        </div>
+        <div class="sale__body--item">
+          <img src="https://statics.vntrip.vn/uploads/deal/20201124_385160_5.jpg" alt="" class="sale__body--item-img">
+          <h1 class="sale__body--item-h1">[SAPA CHARM HOTEL] - ƯU ĐÃI DỊP CUỐI NĂM</h1>
+          <div class="sale__body--item-div1">
+            <i class="fas fa-map-marker-alt sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p">SAPA</p>
+          </div>
+          <div class="sale__body--item-div1">
+            <i class="far fa-clock sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p"><b>91 </b>người mua</p>
+          </div>
+          <div class="sale__body--item-div2">
+            <p class="sale__body--item-div2-p">Chỉ từ</p>
+            <p class="sale__body--item-div2-price">550.000<span class="sale__body--item-div2-span">đ</span></p>
+          </div>
+        </div>
+        <div class="sale__body--item">
+          <img src="https://statics.vntrip.vn/uploads/deal/20201125_048040_458_1522031475_dieu0422.jpg" alt="" class="sale__body--item-img">
+          <h1 class="sale__body--item-h1">HOÀNG SA HOTEL - KHUYẾN MẠI CUỐI NĂM</h1>
+          <div class="sale__body--item-div1">
+            <i class="fas fa-map-marker-alt sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p">Đà Nẵng</p>
+          </div>
+          <div class="sale__body--item-div1">
+            <i class="far fa-clock sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p"><b>112 </b>người mua</p>
+          </div>
+          <div class="sale__body--item-div2">
+            <p class="sale__body--item-div2-p">Chỉ từ</p>
+            <p class="sale__body--item-div2-price">399.000<span class="sale__body--item-div2-span">đ</span></p>
+          </div>
+        </div>
+        <div class="sale__body--item">
+          <img src="https://statics.vntrip.vn/uploads/deal/20201022_536750_VillaSuiteTwin.jpg" alt="" class="sale__body--item-img">
+          <h1 class="sale__body--item-h1">[Ana Villas Dalat Resort & Spa] Ưu đãi đặt biệt - Đêm nghỉ + Bữa sáng</h1>
+          <div class="sale__body--item-div1">
+            <i class="fas fa-map-marker-alt sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p">Đà Lạt</p>
+          </div>
+          <div class="sale__body--item-div1">
+            <i class="far fa-clock sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p"><b>89 </b>người mua</p>
+          </div>
+          <div class="sale__body--item-div2">
+            <p class="sale__body--item-div2-p">Chỉ từ</p>
+            <p class="sale__body--item-div2-price">1.149.000<span class="sale__body--item-div2-span">đ</span></p>
+          </div>
+        </div>
+        <div class="sale__body--item">
+          <img src="https://statics.vntrip.vn/uploads/deal/20200106_535160_Grandslide3.jpg" alt="" class="sale__body--item-img">
+          <h1 class="sale__body--item-h1">[FLC Quy Nhơn + FLC Sầm Sơn + FLC Hạ Long] Voucher nghỉ dưỡng - Đêm nghỉ + Bữa sáng</h1>
+          <div class="sale__body--item-div1">
+            <i class="fas fa-map-marker-alt sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p">Quảng Ninh</p>
+          </div>
+          <div class="sale__body--item-div1">
+            <i class="far fa-clock sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p"><b>232 </b>người mua</p>
+          </div>
+          <div class="sale__body--item-div2">
+            <p class="sale__body--item-div2-p">Chỉ từ</p>
+            <p class="sale__body--item-div2-price">799.000<span class="sale__body--item-div2-span">đ</span></p>
+          </div>
+        </div>
+        <div class="sale__body--item">
+          <img src="https://statics.vntrip.vn/uploads/deal/20201026_496730_105708995_181808649977115_475234634066098868_o__Copy.jpg" alt="" class="sale__body--item-img">
+          <h1 class="sale__body--item-h1">[The Sailing Bay Nha Trang] Siêu khuyến mãi lên đến 80%</h1>
+          <div class="sale__body--item-div1">
+            <i class="fas fa-map-marker-alt sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p">Nha Trang</p>
+          </div>
+          <div class="sale__body--item-div1">
+            <i class="far fa-clock sale__body--item-div1-icon"></i>
+            <p class="sale__body--item-div1-p"><b>312 </b>người mua</p>
+          </div>
+          <div class="sale__body--item-div2">
+            <p class="sale__body--item-div2-p">Chỉ từ</p>
+            <p class="sale__body--item-div2-price">387.000<span class="sale__body--item-div2-span">đ</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp">
+      <h1 class="location__h1">KINH NGHIỆM KHI ĐI MÁY BAY</h1>
+      <div class="exp__body">
+        <a href="https://www.vntrip.vn/cam-nang/nhung-quy-dinh-ba-bau-di-may-bay-can-biet-de-co-chuyen-di-an-toan-109188" target="blank" class="exp__body--item">
+            <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2020/11/Nhung-quy-dinh-ba-bau-di-may-bay-can-nam-2.jpg" alt="" class="exp__body--item-img">
+            <h3 class="exp__body--item-h3">Những quy định bà bầu đi máy bay
+              cần biết để có chuyến đi an toàn</h3>
+            <div class="exp__body--item-div">
+              <img src="../Image/calendar__VMB.svg" alt="" class="exp__body--item-div-img">
+              <p class="exp__body--item-div-p">27/11/2020</p>
+              <img src="../Image/eye__VMB.svg" alt="" class="exp__body--item-div-img">
+              <p class="exp__body--item-div-p">29 Lượt xem</p>
+            </div>
+            <p class="exp__body--item-content">
+              Đối với nhiều người, mang thai không đồng nghĩa với việc
+              trì hoãn những chuyến du lịch trải nghiệm đầy...
+            </p>
+        </a>
+        <a href="https://www.vntrip.vn/cam-nang/nguoi-cao-tuoi-di-may-bay-can-luu-y-gi-109224" target="blank" class="exp__body--item">
+          <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2020/11/Nguoi-cao-tuoi-di-may-bay-3-e1606469220473.jpg" alt="" class="exp__body--item-img">
+          <h3 class="exp__body--item-h3">Người cao tuổi đi máy bay cần lưu ý những gì?</h3>
+          <div class="exp__body--item-div">
+            <img src="../Image/calendar__VMB.svg" alt="" class="exp__body--item-div-img">
+            <p class="exp__body--item-div-p">27/11/2020</p>
+            <img src="../Image/eye__VMB.svg" alt="" class="exp__body--item-div-img">
+            <p class="exp__body--item-div-p">26 Lượt xem</p>
+          </div>
+          <p class="exp__body--item-content">
+            Giảm thiểu được tối đa thời gian đi lại với mức giá rẻ cùng những dịch vụ chăm sóc khách...
+          </p>
+        </a>
+        <a href="https://www.vntrip.vn/cam-nang/do-an-tren-may-bay-co-mien-phi-khong-109129" target="blank" class="exp__body--item">
+          <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2020/11/do-an-tren-may-bay-co-mien-phi-khong2.jpg" alt="" class="exp__body--item-img">
+          <h3 class="exp__body--item-h3">Đồ ăn trên máy bay có miễn phí không?</h3>
+          <div class="exp__body--item-div">
+            <img src="../Image/calendar__VMB.svg" alt="" class="exp__body--item-div-img">
+            <p class="exp__body--item-div-p">26/11/2020</p>
+            <img src="../Image/eye__VMB.svg" alt="" class="exp__body--item-div-img">
+            <p class="exp__body--item-div-p">38 Lượt xem</p>
+          </div>
+          <p class="exp__body--item-content">
+            Đồ ăn miễn phí trên các chuyến bay nội địa Việt Nam Pacific Airlines có phục vụ suất ăn...
+          </p>
+        </a>
+        <a href="https://www.vntrip.vn/cam-nang/nen-an-gi-va-kieng-gi-truoc-khi-di-may-bay-109041" target="blank" class="exp__body--item">
+          <img src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2020/11/nen-an-gi-va-kieng-gi-truoc-khi-di-may-bay6.jpg" alt="" class="exp__body--item-img">
+          <h3 class="exp__body--item-h3">Nên ăn gì và kiêng gì trước khi đi máy bay?</h3>
+          <div class="exp__body--item-div">
+            <img src="../Image/calendar__VMB.svg" alt="" class="exp__body--item-div-img">
+            <p class="exp__body--item-div-p">25/11/2020</p>
+            <img src="../Image/eye__VMB.svg" alt="" class="exp__body--item-div-img">
+            <p class="exp__body--item-div-p">54 Lượt xem</p>
+          </div>
+          <p class="exp__body--item-content">
+            Chế độ dinh dưỡng trước khi đi máy bay thực sự rất quan trọng vì nếu như ăn uống lành...
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div class="download">
+      <div class="wrap__download">
+        <div class="download__mobile">
+          <img
+            src="https://statics.vntrip.vn/images/appBox-iphone.png"
+            alt=""
+          />
+        </div>
+        <div class="download__content">
+          <h1 class="download__content--h1">
+            Du lịch dễ dàng với một ứng dụng duy nhất.
+          </h1>
+          <p class="download__content--p">
+            Dùng ứng dụng để booking khách sạn trong vòng vài giây với chất
+            lượng tuyệt vời nhất !
+          </p>
+          <div class="download__content--logo">
+            <img
+              src="https://statics.vntrip.vn/images/logo/appStore.png"
+              alt=""
+              class="download__content--logo-appstore"
+            />
+            <img
+              src="https://statics.vntrip.vn/images/logo/googlePlay.png"
+              alt=""
+              class="download__content--logo-googleplay"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__column">
+            <h3 class="footer__heading">GIỚI THIỆU</h3>
+            <ul class="footer__list">
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link"
+                  >Giới thiệu về Trip</a
+                >
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link"
+                  >Điều khoản sử dụng</a
+                >
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link">Quy chế hoạt động</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link"
+                  >Chính sách bảo mật</a
+                >
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link">Blog du lịch</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link">Tuyển dụng CTV</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="grid__column">
+            <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+            <ul class="footer__list">
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link"
+                  >Trung tâm trợ giúp</a
+                >
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link">Hướng dẫn</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link">Trả & đổi phòng</a>
+              </li>
+              <li class="footer__list--item">
+                <a href="" class="footer__list--item-link">Chính sách hỗ trợ</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="grid__column">
+            <h3 class="footer__heading">THANH TOÁN</h3>
+            <ul class="footer__list"></ul>
+          </div>
+  
+          <div class="grid__column">
+            <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3>
+            <ul class="footer__list">
+              <li class="footer__list--item">
+                <a href=""
+                  ><i class="fab fa-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list--item">
+                <a href=""
+                  ><i class="far fa-envelope"></i>
+                  Gmail
+                </a>
+              </li>
+              <li class="footer__list--item">
+                <a href=""
+                  ><i class="fab fa-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="grid__column">
+            <h3 class="footer__heading">Tải ngay ứng dụng</h3>
+            <div class="footer__download">
+              <img
+                src="https://img.tickid.vn/photos/qrcode_base64/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ"
+                alt=""
+                class="footer__download--qr"
+              />
+              <div class="footer__download--apps">
+                <a class="footer__download--apps-link" href="">
+                  <img
+                    src="https://statics.vntrip.vn/images/logo/appStore.png"
+                    alt=""
+                    class="footer__download--apps-icon"
+                  />
+                </a>
+                <a class="footer__download--apps-link" href="">
+                  <img
+                    src="https://statics.vntrip.vn/images/logo/googlePlay.png"
+                    alt=""
+                    class="footer__download--apps-icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal modal__login" id="Modal-login">
+      <div class="modal__container">
+        <div class="modal__form">
+          <div class="modal__form--heading">
+            <h3 class="modal__form--heading-h3">Đăng nhập</h3>
+            <span class="modal__form--heading-close" id="close-login">&times;</span>
+          </div>
+          <div class="modal__form--content">
+            <input
+              class="modal__form--content-input modal__form--content-input1"
+              type="text"
+              placeholder="Email"
+            />
+            <div class="modal__form--content-input-pass">
+              <input
+                class="modal__form--content-input"
+                type="password"
+                placeholder="Mật khẩu" id="show-pass-login"
+              />
+              <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-login"></i>
+            </div>
+            <p class="modal__form--content-forget">Quên mật khẩu</p>
+            <button class="modal__form--content-btn" type="submit">
+              ĐĂNG NHẬP
+            </button>
+            <div class="modal__form--content-or">
+              <span class="modal__form--content-or-span"></span>
+              <p class="modal__form--content-or-p">Hoặc</p>
+              <span class="modal__form--content-or-span"></span>
+            </div>
+            <div class="modal__form--content-link">
+              <i
+                class="fab fa-facebook-square modal__form--content-link-iconFB"
+              ></i>
+              <p class="modal__form--content-link-p">Đăng nhập bằng Facebook</p>
+            </div>
+            <div class="modal__form--content-link">
+              <img
+                class="modal__form--content-link-iconGG"
+                src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png"
+                alt=""
+              />
+              <p class="modal__form--content-link-p">Đăng nhập bằng Google</p>
+            </div>
+          </div>
+          <div class="modal__form--footer modal__form--footer-login">
+            <p class="modal__form--footer-p">Chưa có tài khoản?</p>
+            <p class="modal__form--footer-p1" id="form__login-link-to-register">Đăng ký</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal modal__register" id="Modal-register">
+      <div class="modal__container">
+        <div class="modal__form">
+          <div class="modal__form--heading">
+            <h3 class="modal__form--heading-h3">Đăng ký</h3>
+            <span class="modal__form--heading-close" id="close-register">&times;</span>
+          </div>
+          <div class="modal__form--content">
+            <input
+              class="modal__form--content-input modal__form--content-input1"
+              type="text"
+              placeholder="Email"
+            />
+            <div class="modal__form--content-input-pass modal__form--content-input-pass-register">
+              <input
+                class="modal__form--content-input"
+                type="password"
+                placeholder="Mật khẩu" id="show-pass-register1"
+              />
+              <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-register1"></i>
+            </div>
+            <div class="modal__form--content-input-pass modal__form--content-input-pass-register">
+              <input
+                class="modal__form--content-input"
+                type="password"
+                placeholder="Nhập lại mật khẩu" id="show-pass-register2"
+              />
+              <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-register2"></i>
+            </div>
+            <button class="modal__form--content-btn" type="submit">
+              ĐĂNG KÝ
+            </button>
+            <div class="modal__form--footer modal__form--footer-register">
+              <div class="modal__form--footer-wrap">
+                <p class="modal__form--footer-p">Bạn đã có tài khoản?</p>
+                <p class="modal__form--footer-p1" id="form__register-link-to-login">Đăng nhập</p>
+              </div>  
+              <p class="modal__form--footer-p modal__form--footer-p-register">Tiếp tục nghĩa là bạn đồng ý với các <span class="modal__form--footer-span">Điều khoản và điều kiện,</span>
+                cũng như các <span class="modal__form--footer-span">Chính sách bảo mật</span> của TRIP.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="/slick-1.8.1/slick//slick.min.js"></script>
+    <script src="./VeMayBay.js"></script>
+    <script src="../base.js"></script>
+</body>
+</html>

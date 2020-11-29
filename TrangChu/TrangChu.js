@@ -8,11 +8,8 @@ $('.header__slick').slick({
 });
 
 $('.container__slick').slick({
-  // infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 3000,
-  centerMode:true,
-  // centerPadding:'40px',
+  autoplay: true,
+  autoplaySpeed: 3000,
 });
