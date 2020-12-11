@@ -1,7 +1,8 @@
+
 .header{
     width: 100vw;
     height: 500px;
-    background: url(../Image/bannerVMB.png) no-repeat center / cover;
+    background: url(../Image/banner4.jpg) no-repeat center / cover;
     position: relative;
 }
 /* Header Menu */
@@ -97,410 +98,78 @@
     font-weight: 500;
 }
 
-
-/* Body wrap đặt vé */
-.wrap{
-    width: 100vw;
-    position: relative;
-    top: -54px;
-}
-
-.wrapper{
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #ccc;
+/* Header title */
+.header__title{
+    margin-top: 140px;
+    background-color: var(--white-color);
+    width: 500px;
+    height: 140px;
+    border-radius: 4px;
     box-shadow: 0 3px 3px #ccc;
-    border-radius: 4px;
-    padding-bottom: 12px;
-    background-color: var(--white-color);
-    padding-bottom: 30px;
-}
-
-.wrapper__heading{
     display: flex;
     align-items: center;
-    border-bottom: solid var(--primary-color);
-    padding-left: 20px;
-}
-
-.wrapper__heading--img{
-    margin-right: 8px;
-    cursor: pointer;
-}
-
-.wrapper__heading--p{
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-.wrapper__content{
-
-}
-
-.wrapper__content--div1{
-    display: flex;
-    margin: 10px 0 0 20px;
-    height: 40px;
-}
-
-.wrapper__content--div1-radio{
-    display: flex;
-    align-items: center;
-    margin-right: 4px;
-
-}
-
-.wrapper__content--div1-radio-input{
-    height: 14px;
-    width: 14px;
-    margin: 0 4px 0 0;
-}
-
-.wrapper__content--div1-radio-p{
-    font-size: 1.6rem;
-}
-
-.wrapper__content--div2{
-    display: flex;
-    margin: 0 24px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.div2__p{
-    font-size: 1.4rem;
-    margin: 8px 0;
-    padding-left: 8px;
-}
-
-.div2__p0{
-    padding-left: 0;
-}
-
-.div2__input{
-    font-size: 1.3rem;
-    height: 30px;
-    width: 190px;
-    outline: none;
-    border: 1px solid #ccc;
-    margin: 4px 0;
-    border-radius: 4px;
-    padding-left: 8px;
-}
-
-.div2__input0{
-    padding-left: 7px;
-}
-
-.div2__input:hover, .div2__passenger--div:hover{
-    border: 1px solid var(--primary-color);
-}
-
-.div2__img{
-    position: relative;
-    bottom: -16px;
-    cursor: pointer;
-}
-
-.div2__passenger--div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8px;
-    border: 1px solid #ccc;
-    height: 30px;
-    width: 70px;
-    border-radius: 4px;
-}
-
-.div2__passenger--div-p{
-    font-size: 1.3rem;
-}
-
-.div2__passenger--div-icon{
-    font-size: 1.2rem;
-}
-
-.div2__btn{
-    height: 30px;
-    font-size: 1.4rem;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    outline: none;
-    border: 1px solid var(--primary-color);
-    position: relative;
-    bottom: -16px;
-}
-
-/* QR */
-.QR{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.QR__content{
-    display: flex;
-    align-items: center;
-}
-
-.QR__content--img{
-    margin-right: 16px;
-}
-
-.QR__content--div{
-
-}
-
-.QR__content--div-h2{
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.QR__content--div-p{
-    font-size: 1.4rem;
-    color: var(--text-color);
-}
-
-.QR__download{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-left: 1px solid #ccc;
-}
-
-.QR__download--img{
-    height: 80px;
-    width: 80px;
-    margin: 0 auto;
-}
-
-.QR__download--p{
-    font-size: 1.3rem;
-    color: var(--text-color);
-}
-
-/* Location */
-.location{
-    width: 80%;
-    margin: 80px auto 40px;
-}
-
-.location__h1{
-    text-align: center;
-    color: #195688;
-    font-size: 2.2rem;
-}
-
-.location__body{
-    display: grid;
-    grid-template-rows: 220px 220px;
-    grid-gap: 10px;
-    margin-top: 30px;
-}
-
-.location__body--top{
-    display: grid;
-    /* grid-row: 1/2; */
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.location__body--bottom{
-    display: grid;
-    /* grid-row: 2/3; */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.location__body--wrap{
-    height: 220px;
-    position: relative;
-}
-
-.location img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.location__body--wrap-div{
     position: absolute;
-    right:20px;
-    left: 20px;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.location__body--wrap-div-p1{
-    font-size: 1.8rem;
-    color: var(--white-color);
-    font-weight: 500;
-}
-
-.location__body--wrap-div-p2{
-    font-size: 2.2rem;
-    color: var(--white-color);
-    font-weight: 700;
-}
-
-.location__body--wrap-div-span{
-    text-decoration: underline;
-}
-
-/* Sale */
-.sale{
-    width: 80%;
-    margin: 50px auto;
-    background-color: var(--white-color);
-    padding: 10px 0 20px;
-}
-
-.sale__body{
-    display: flex;
-}
-
-.sale__body .slick-prev::before,
- .sale__body .slick-next::before{
+.header__title--h1{
     color: var(--primary-color);
-    font-size: 2.2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 auto;
 }
 
-.sale__body .slick-list{
-    padding: 20px 0;
+/* List dịch vụ */
+
+.grid1{
+    /* padding-top: 100px; */
+    padding-top: 40px;
 }
 
-.sale__body--item{
-    /* flex-basis: 20%; */
-    min-height: 400px;
-    margin: 0 10px;
-    box-shadow: 0px 1px 3px #ccc;
+.list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
     background-color: var(--white-color);
-    outline: none;
-    border-radius: 4px;
-}
-
-.sale__body--item:hover{
-    border: 1px solid var(--primary-color);
-}
-
-.sale__body--item-img{
-    height: 185px;
-    /* width: 295px; */
-    width: 100%;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.sale__body--item-h1{
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-    font-weight: 500;
-    margin-left: 8px;
-    min-height: 48px;
-}
-
-.sale__body--item-div1{
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 8px;
+    padding: 20px 0;
+    border-radius: 4px;
+    margin-bottom: 40px;
 }
 
-.sale__body--item-div1-icon{
-    margin-right: 8px;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    opacity: 0.4;
-}
-
-.sale__body--item-div1-p{
-    font-size: 1.4rem;
-    margin: 8px 0;
-}
-
-.sale__body--item-div2{
-    float: right;
-    margin-right: 8px;
-}
-
-.sale__body--item-div2-p{
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: right;
-    margin: 8px 0;
-}
-
-.sale__body--item-div2-price{
-    font-size: 2.4rem;
-    color: #ff9d3f;
-    font-weight: 700;
-    margin: 16px 0;
-}
-
-.sale__body--item-div2-span{
-    text-decoration: underline;
-}
-
-
-/* Exp Kinh nghiệm đi máy bay */
-.exp{
-    width: 80%;
-    margin: 0 auto 40px;
-}
-
-.exp__body{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* .exp__body--link{
-    text-decoration: none;
-} */
-
-.exp__body--item{
-    flex-basis: 23%;
-    text-decoration: none;
-}
-
-.exp__body--item-img{
-    height: 155px;
-    width: 100%;
-    object-fit: cover;
+.list__item{
+    flex-basis: 22%;
+    border: 1px solid #ccc;
+    padding: 10px;
     border-radius: 4px;
 }
 
-.exp__body--item-h3{
+.list__item--link{
+    text-decoration: none;
+}
+
+.list__item--img{
+    width: 100%;
+    height: 150px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.list__item--title{
     font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--text-color);
+    color: #7b93f3;
 }
 
-.exp__body--item-div{
-    display: flex;
-}
-
-.exp__body--item-div-img{
-    margin-right: 6px;
-}
-
-.exp__body--item-div-p{
-    margin-right: 16px;
-    color: var(--text-color);
-}
-
-.exp__body--item-content{
+.list__item--content{
     font-size: 1.4rem;
     color: var(--text-color);
+    font-weight: 400;
 }
+
+
 
 /* Body download */
 .download{
@@ -555,6 +224,111 @@
     margin-right: 40px;
 }
 
+/* Body Cam kết */
+.body1__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.body1__list--item{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    margin: 12px;
+}
+
+.body1__list--item-img{
+    margin-right: 8px;
+}
+
+.body1__list--item-p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* Body booking */
+.booking{
+    background: url(http://bookinghotel.mynukeviet.com/themes/hotel01/images/contactf.jpg) no-repeat center / cover;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 3px 3px #ccc;
+}
+
+.booking__form{
+    background-color: var(--white-color);
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 1px 3px 3px #ccc;
+    border-radius: 6px;
+    padding-bottom: 40px;
+}
+.booking__form--h1{
+    color: #195688;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 20px;
+}
+
+.booking__form--p{
+    color: #195688;
+    font-size: 1.8rem;
+    margin: 10px 0 4px 30px;
+}
+
+.booking__form--input{
+    font-size: 1.4rem;
+    height: 34px;
+    width: 90%;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin: 10px 0 10px 30px;
+}
+
+.input__NoiDung{
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+.booking__form--checkbox{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 12px;
+}
+
+.booking__form--checkbox input{
+    height: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.booking__form--checkbox p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.booking__form--btn{
+    display: flex;
+}
+
+.booking__form--btn button{
+    font-size: 1.8rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+}
 
 /* Body footer */
 .footer{

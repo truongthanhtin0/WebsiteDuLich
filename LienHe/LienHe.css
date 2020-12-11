@@ -1,7 +1,9 @@
+
+
 .header{
     width: 100vw;
     height: 500px;
-    background: url(../Image/bannerVMB.png) no-repeat center / cover;
+    background: url(../Image/banner4.jpg) no-repeat center / cover;
     position: relative;
 }
 /* Header Menu */
@@ -97,463 +99,130 @@
     font-weight: 500;
 }
 
-
-/* Body wrap đặt vé */
-.wrap{
-    width: 100vw;
-    position: relative;
-    top: -54px;
-}
-
-.wrapper{
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 3px 3px #ccc;
-    border-radius: 4px;
-    padding-bottom: 12px;
+/* Header title */
+.header__title{
+    margin-top: 140px;
     background-color: var(--white-color);
-    padding-bottom: 30px;
-}
-
-.wrapper__heading{
+    width: 500px;
+    height: 140px;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px #ccc;
     display: flex;
     align-items: center;
-    border-bottom: solid var(--primary-color);
-    padding-left: 20px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.wrapper__heading--img{
-    margin-right: 8px;
-    cursor: pointer;
-}
-
-.wrapper__heading--p{
-    font-size: 1.8rem;
-    font-weight: 500;
+.header__title--h1{
     color: var(--primary-color);
-    cursor: pointer;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 auto;
 }
 
-.wrapper__content{
 
+/* Grid liên hệ */
+.form{
+    margin: 50px 100px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 3px 3px #ccc;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    padding: 20px 0 40px;
 }
 
-.wrapper__content--div1{
-    display: flex;
-    margin: 10px 0 0 20px;
-    height: 40px;
+.form__content{
+    border: 1px solid #ccc;
+    margin: 20px 40px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #ccc;
 }
 
-.wrapper__content--div1-radio{
-    display: flex;
-    align-items: center;
-    margin-right: 4px;
-
-}
-
-.wrapper__content--div1-radio-input{
-    height: 14px;
-    width: 14px;
-    margin: 0 4px 0 0;
-}
-
-.wrapper__content--div1-radio-p{
-    font-size: 1.6rem;
-}
-
-.wrapper__content--div2{
-    display: flex;
-    margin: 0 24px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.div2__p{
+.form__content p{
     font-size: 1.4rem;
-    margin: 8px 0;
-    padding-left: 8px;
+    padding: 0 20px;
+    color: var(--text-color);
+    line-height: 1.6rem;
 }
 
-.div2__p0{
-    padding-left: 0;
+.form__container{
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
 }
 
-.div2__input{
-    font-size: 1.3rem;
-    height: 30px;
-    width: 190px;
+.form__contact1{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #ccc;
+    width: fit-content;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+
+.form__contact2{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #ccc;
+    height: fit-content;
+    width: fit-content;
+    padding: 0 20px;
+    font-size: 1.4rem;
+}
+
+.form__contact1--p{
+    font-size: 1.4rem;
+    margin: 16px 0 8px;
+}
+
+.form__contact1--input{
+    font-size: 1.4rem;
+    height: 32px;
+    width: 650px;
     outline: none;
     border: 1px solid #ccc;
-    margin: 4px 0;
-    border-radius: 4px;
-    padding-left: 8px;
 }
 
-.div2__input0{
-    padding-left: 7px;
+.form__contact1--input-ND{
+    height: 44px;
 }
 
-.div2__input:hover, .div2__passenger--div:hover{
-    border: 1px solid var(--primary-color);
-}
-
-.div2__img{
-    position: relative;
-    bottom: -16px;
-    cursor: pointer;
-}
-
-.div2__passenger--div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8px;
-    border: 1px solid #ccc;
+.form__contact1--btn{
+    display: block;
+    margin: 20px auto;
+    font-size: 1.6rem;
     height: 30px;
-    width: 70px;
-    border-radius: 4px;
-}
-
-.div2__passenger--div-p{
-    font-size: 1.3rem;
-}
-
-.div2__passenger--div-icon{
-    font-size: 1.2rem;
-}
-
-.div2__btn{
-    height: 30px;
-    font-size: 1.4rem;
-    cursor: pointer;
+    width: 120px;
     background-color: var(--primary-color);
     color: var(--white-color);
+    border: none;
+    border-radius: 4px;
     outline: none;
-    border: 1px solid var(--primary-color);
-    position: relative;
-    bottom: -16px;
-}
-
-/* QR */
-.QR{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.QR__content{
-    display: flex;
-    align-items: center;
-}
-
-.QR__content--img{
-    margin-right: 16px;
-}
-
-.QR__content--div{
-
-}
-
-.QR__content--div-h2{
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.QR__content--div-p{
-    font-size: 1.4rem;
-    color: var(--text-color);
-}
-
-.QR__download{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-left: 1px solid #ccc;
-}
-
-.QR__download--img{
-    height: 80px;
-    width: 80px;
-    margin: 0 auto;
-}
-
-.QR__download--p{
-    font-size: 1.3rem;
-    color: var(--text-color);
-}
-
-/* Location */
-.location{
-    width: 80%;
-    margin: 80px auto 40px;
-}
-
-.location__h1{
-    text-align: center;
-    color: #195688;
-    font-size: 2.2rem;
-}
-
-.location__body{
-    display: grid;
-    grid-template-rows: 220px 220px;
-    grid-gap: 10px;
-    margin-top: 30px;
-}
-
-.location__body--top{
-    display: grid;
-    /* grid-row: 1/2; */
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.location__body--bottom{
-    display: grid;
-    /* grid-row: 2/3; */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.location__body--wrap{
-    height: 220px;
-    position: relative;
-}
-
-.location img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.location__body--wrap-div{
-    position: absolute;
-    right:20px;
-    left: 20px;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.location__body--wrap-div-p1{
-    font-size: 1.8rem;
-    color: var(--white-color);
-    font-weight: 500;
-}
-
-.location__body--wrap-div-p2{
-    font-size: 2.2rem;
-    color: var(--white-color);
-    font-weight: 700;
-}
-
-.location__body--wrap-div-span{
-    text-decoration: underline;
-}
-
-/* Sale */
-.sale{
-    width: 80%;
-    margin: 50px auto;
-    background-color: var(--white-color);
-    padding: 10px 0 20px;
-}
-
-.sale__body{
-    display: flex;
-}
-
-.sale__body .slick-prev::before,
- .sale__body .slick-next::before{
-    color: var(--primary-color);
-    font-size: 2.2rem;
-}
-
-.sale__body .slick-list{
-    padding: 20px 0;
-}
-
-.sale__body--item{
-    /* flex-basis: 20%; */
-    min-height: 400px;
-    margin: 0 10px;
-    box-shadow: 0px 1px 3px #ccc;
-    background-color: var(--white-color);
-    outline: none;
-    border-radius: 4px;
-}
-
-.sale__body--item:hover{
-    border: 1px solid var(--primary-color);
-}
-
-.sale__body--item-img{
-    height: 185px;
-    /* width: 295px; */
-    width: 100%;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.sale__body--item-h1{
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-    font-weight: 500;
-    margin-left: 8px;
-    min-height: 48px;
-}
-
-.sale__body--item-div1{
-    display: flex;
-    align-items: center;
-    margin-left: 8px;
-}
-
-.sale__body--item-div1-icon{
-    margin-right: 8px;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    opacity: 0.4;
-}
-
-.sale__body--item-div1-p{
-    font-size: 1.4rem;
-    margin: 8px 0;
-}
-
-.sale__body--item-div2{
-    float: right;
-    margin-right: 8px;
-}
-
-.sale__body--item-div2-p{
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: right;
-    margin: 8px 0;
-}
-
-.sale__body--item-div2-price{
-    font-size: 2.4rem;
-    color: #ff9d3f;
-    font-weight: 700;
-    margin: 16px 0;
-}
-
-.sale__body--item-div2-span{
-    text-decoration: underline;
-}
-
-
-/* Exp Kinh nghiệm đi máy bay */
-.exp{
-    width: 80%;
-    margin: 0 auto 40px;
-}
-
-.exp__body{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* .exp__body--link{
-    text-decoration: none;
-} */
-
-.exp__body--item{
-    flex-basis: 23%;
-    text-decoration: none;
-}
-
-.exp__body--item-img{
-    height: 155px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.exp__body--item-h3{
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.exp__body--item-div{
-    display: flex;
-}
-
-.exp__body--item-div-img{
-    margin-right: 6px;
-}
-
-.exp__body--item-div-p{
-    margin-right: 16px;
-    color: var(--text-color);
-}
-
-.exp__body--item-content{
-    font-size: 1.4rem;
-    color: var(--text-color);
-}
-
-/* Body download */
-.download{
-    background: url(https://statics.vntrip.vn/images/appBox-bg.jpg) no-repeat center / cover;
-    margin-bottom: 40px;
-    padding-top: 40px;
-}
-
-.wrap__download{
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.download__mobile{
-    height: 442px;
-    width: 270px;
-}
-
-.download__mobile img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.download__content{
-    width: 60%;
-}
-
-.download__content--h1{
-    font-size: 4rem;
-    line-height: 5rem;
-}   
-
-.download__content--p{
-    font-size: 1.6rem;
-    line-height: 2rem;
-}
-
-.download__content--logo-appstore,
-.download__content--logo-googleplay{
-    height: 55px;
-    width: 160px;
-    object-fit: cover;
-    border-radius: 6px;
     cursor: pointer;
 }
 
-.download__content--logo-appstore{
-    margin-right: 40px;
+.form__contact1--btn:hover{
+    opacity: 0.9;
 }
+
+.form__contact2--div{
+    display: flex;
+    align-items: center;
+}
+
+.form__contact2--div i{
+    font-size: 1.6rem;
+    margin-right: 12px;
+}
+
+.form__contact2 p{
+    margin: 8px 0;
+}
+
+
+
 
 
 /* Body footer */
