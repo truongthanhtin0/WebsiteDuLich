@@ -296,6 +296,7 @@
     display: flex;
     align-items: center;
     margin: 12px;
+    cursor: pointer;
 }
 
 .body1__list--item-img{
@@ -423,6 +424,10 @@
     outline: none;
     border: 1px solid #ccc;
     margin: 10px 0 10px 30px;
+}
+
+.booking__form--input:hover{
+    border-color: var(--primary-color);
 }
 
 .input__NoiDung{

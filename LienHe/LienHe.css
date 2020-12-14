@@ -141,7 +141,7 @@
 }
 
 .form__content p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0 20px;
     color: var(--text-color);
     line-height: 1.6rem;
@@ -183,6 +183,12 @@
     width: 650px;
     outline: none;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.form__contact1--input:hover{
+    border-color: var(--primary-color);
 }
 
 .form__contact1--input-ND{

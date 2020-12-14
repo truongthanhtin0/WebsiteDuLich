@@ -205,6 +205,7 @@
 }
 
 .div2__passenger--div{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -215,12 +216,131 @@
     border-radius: 4px;
 }
 
+.adults{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-left: 0px;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #ccc;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.adults::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: transparent;
+}
+
+.adults__item{
+    font-size: 1.3rem;
+    padding: 4px 0 4px 8px;
+    color: var(--text-color);
+}
+
+.adults__item:hover{
+    background-color: var(--primary-color);
+}
+
+.div2__passenger--div-adults:hover .adults{
+    display: block;
+}
+
 .div2__passenger--div-p{
     font-size: 1.3rem;
+    color: var(--text-color);
 }
 
 .div2__passenger--div-icon{
     font-size: 1.2rem;
+}
+
+.children{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-left: 0px;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #ccc;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.children::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: transparent;
+}
+
+.children__item{
+    font-size: 1.3rem;
+    padding: 4px 0 4px 8px;
+    color: var(--text-color);
+}
+
+.children__item:hover{
+    background-color: var(--primary-color);
+}
+
+.div2__passenger--div-children:hover .children{
+    display: block;
+}
+
+
+.infant{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-left: 0px;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #ccc;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.infant::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: transparent;
+}
+
+.infant__item{
+    font-size: 1.3rem;
+    padding: 4px 0 4px 8px;
+    color: var(--text-color);
+}
+
+.infant__item:hover{
+    background-color: var(--primary-color);
+}
+
+.div2__passenger--div-infant:hover .infant{
+    display: block;
 }
 
 .div2__btn{
@@ -273,6 +393,7 @@
     align-items: center;
     flex-direction: column;
     border-left: 1px solid #ccc;
+    cursor: pointer;
 }
 
 .QR__download--img{
