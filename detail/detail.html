@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách khách sạn</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />  
+    <link
+      rel="stylesheet"
+      href="/font/fontawesome-free-5.14.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="../base.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="header__menu">
+        <div class="logo">
+          <a href="../TrangChu/TrangChu.html"><img src="/Image/logoDTU.png" alt="" /></a>
+        </div>
+        <div class="submenu">
+          <div class="submenu__1">
+            <div class="submenu__1--left">
+              <p class="submenu__1--left-hotline">Hotline:</p>
+              <p href="" class="submenu__1--left-phone">093.5633219</p>
+            </div>
+            <div class="submenu__1--right">
+              <button
+                class="submenu__1--right-account submenu__1--right-account-login"
+                id="login"
+              >
+                Đăng nhập
+              </button>
+              <button
+                class="submenu__1--right-account submenu__1--right-account-register"
+                id="register"
+              >
+                Đăng ký
+              </button>
+            </div>
+          </div>
+          <div class="submenu__2">
+            <a href="../VeMayBay/VeMayBay.html" class="submenu__2--link">VÉ MÁY BAY</a>
+            <a href="../SanGiaRe/SanGiaRe.html" class="submenu__2--link">SĂN GIÁ RẺ</a>
+            <a href="../DichVu/DichVu.html" class="submenu__2--link">DỊCH VỤ</a>
+            <a href="../TinTuc/TinTuc.html" class="submenu__2--link">TIN TỨC</a>
+            <a href="../LienHe/LienHe.html" class="submenu__2--link">LIÊN HỆ</a>
+          </div>
+        </div>
+    </div>
+  </div>  
+
+  <div class="grid grid__detail">
+    <div class="grid__wrapper">
+      <div class="grid__search">
+        <div class="search__img">
+          <img src="../Image/huychuong.png" alt="">
+          <p>Số 1 về chất lượng dịch vụ</p>
+        </div>
+        <div class="search__content">
+          <div class="search__hotel">
+            <h3 class="search__title">Tìm khách sạn</h3>
+            <input class="search__hotel--input" type="text" placeholder="Nhập tên khách sạn">
+            <i class="fas fa-search search__hotel--icon"></i>
+          </div>
+          <div class="search__rating">
+            <h3 class="search__title">Xếp hạng khách sạn</h3>
+            <ul class="search__list">
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon"></i>
+                <i class="fas fa-star search__list--icon"></i>
+                <i class="fas fa-star search__list--icon"></i>
+                <i class="fas fa-star search__list--icon"></i>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon"></i>
+                <i class="fas fa-star search__list--icon"></i>
+                <i class="fas fa-star search__list--icon"></i>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon"></i>
+                <i class="fas fa-star search__list--icon"></i>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon"></i>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+                <i class="fas fa-star search__list--icon search__list--icon-active"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="search__price">
+            <h3 class="search__title">Mức giá</h3>
+            <ul class="search__list">
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Dưới 500.000đ</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">500.000đ - 1.000.000đ</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">1.000.000đ - 2.000.000đ</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">2.000.000đ - 3.000.000đ</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Trên 3.000.000đ</p>
+              </li>
+            </ul>
+          </div>
+          <div class="search__type">
+            <h3 class="search__title">Loại chỗ ở</h3>
+            <ul class="search__list">
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Hotel</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Apartment</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Resort</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Villa</p>
+              </li>
+              <li class="search__list--item">
+                <input class="search__list--input" type="checkbox" name="" id="">
+                <p class="search__list--item-p">Homestay</p>
+              </li>
+            </ul>
+          </div>
+        </div>     
+      </div>
+      <div class="grid__content">
+        <ul class="hotel__list">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="download">
+    <div class="wrap__download">
+      <div class="download__mobile">
+        <img
+          src="https://statics.vntrip.vn/images/appBox-iphone.png"
+          alt=""
+        />
+      </div>
+      <div class="download__content">
+        <h1 class="download__content--h1">
+          Du lịch dễ dàng với một ứng dụng duy nhất.
+        </h1>
+        <p class="download__content--p">
+          Dùng ứng dụng để booking khách sạn trong vòng vài giây với chất
+          lượng tuyệt vời nhất !
+        </p>
+        <div class="download__content--logo">
+          <img
+            src="https://statics.vntrip.vn/images/logo/appStore.png"
+            alt=""
+            class="download__content--logo-appstore"
+          />
+          <img
+            src="https://statics.vntrip.vn/images/logo/googlePlay.png"
+            alt=""
+            class="download__content--logo-googleplay"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="booking">
+    <div class="booking__form">
+      <h1 class="booking__form--h1">Đăng ký đặt phòng ngay hôm nay</h1>
+      <p class="booking__form--p">Họ và tên:</p>
+      <input
+        type="text"
+        class="booking__form--input"
+        placeholder="Họ và tên"
+      />
+      <p class="booking__form--p">Email:</p>
+      <input type="text" class="booking__form--input" placeholder="Email" />
+      <p class="booking__form--p">Số điện thoại:</p>
+      <input
+        type="text"
+        class="booking__form--input"
+        placeholder="Số điện thoại"
+      />
+      <p class="booking__form--p">Nội dung:</p> 
+      <input
+        type="text"
+        class="booking__form--input input__NoiDung"
+        placeholder="Nội dung"
+      />
+      <div class="booking__form--checkbox">
+        <input type="checkbox" name="" id="" />
+        <p>Gửi bản sao này cho chúng tôi</p>
+      </div>
+      <div class="booking__form--btn">
+        <button type="submit">Gửi thông tin</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="grid">
+      <div class="grid__row">
+        <div class="grid__column">
+          <h3 class="footer__heading">GIỚI THIỆU</h3>
+          <ul class="footer__list">
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link"
+                >Giới thiệu về Trip</a
+              >
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link"
+                >Điều khoản sử dụng</a
+              >
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link">Quy chế hoạt động</a>
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link"
+                >Chính sách bảo mật</a
+              >
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link">Blog du lịch</a>
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link">Tuyển dụng CTV</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid__column">
+          <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+          <ul class="footer__list">
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link"
+                >Trung tâm trợ giúp</a
+              >
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link">Hướng dẫn</a>
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link">Trả & đổi phòng</a>
+            </li>
+            <li class="footer__list--item">
+              <a href="" class="footer__list--item-link">Chính sách hỗ trợ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid__column">
+          <h3 class="footer__heading">THANH TOÁN</h3>
+          <ul class="footer__list"></ul>
+        </div>
+
+        <div class="grid__column">
+          <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3>
+          <ul class="footer__list">
+            <li class="footer__list--item">
+              <a href=""
+                ><i class="fab fa-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list--item">
+              <a href=""
+                ><i class="far fa-envelope"></i>
+                Gmail
+              </a>
+            </li>
+            <li class="footer__list--item">
+              <a href=""
+                ><i class="fab fa-instagram"></i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid__column">
+          <h3 class="footer__heading">Tải ngay ứng dụng</h3>
+          <div class="footer__download">
+            <img
+              src="https://img.tickid.vn/photos/qrcode_base64/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ"
+              alt=""
+              class="footer__download--qr"
+            />
+            <div class="footer__download--apps">
+              <a class="footer__download--apps-link" href="">
+                <img
+                  src="https://statics.vntrip.vn/images/logo/appStore.png"
+                  alt=""
+                  class="footer__download--apps-icon"
+                />
+              </a>
+              <a class="footer__download--apps-link" href="">
+                <img
+                  src="https://statics.vntrip.vn/images/logo/googlePlay.png"
+                  alt=""
+                  class="footer__download--apps-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal__login" id="Modal-login">
+    <div class="modal__container">
+      <div class="modal__form">
+        <div class="modal__form--heading">
+          <h3 class="modal__form--heading-h3">Đăng nhập</h3>
+          <span class="modal__form--heading-close" id="close-login">&times;</span>
+        </div>
+        <div class="modal__form--content">
+          <input
+            class="modal__form--content-input modal__form--content-input1"
+            type="text"
+            placeholder="Email"
+          />
+          <div class="modal__form--content-input-pass">
+            <input
+              class="modal__form--content-input"
+              type="password"
+              placeholder="Mật khẩu" id="show-pass-login"
+            />
+            <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-login"></i>
+          </div>
+          <p class="modal__form--content-forget">Quên mật khẩu</p>
+          <button class="modal__form--content-btn" type="submit">
+            ĐĂNG NHẬP
+          </button>
+          <div class="modal__form--content-or">
+            <span class="modal__form--content-or-span"></span>
+            <p class="modal__form--content-or-p">Hoặc</p>
+            <span class="modal__form--content-or-span"></span>
+          </div>
+          <div class="modal__form--content-link">
+            <i
+              class="fab fa-facebook-square modal__form--content-link-iconFB"
+            ></i>
+            <p class="modal__form--content-link-p">Đăng nhập bằng Facebook</p>
+          </div>
+          <div class="modal__form--content-link">
+            <img
+              class="modal__form--content-link-iconGG"
+              src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png"
+              alt=""
+            />
+            <p class="modal__form--content-link-p">Đăng nhập bằng Google</p>
+          </div>
+        </div>
+        <div class="modal__form--footer modal__form--footer-login">
+          <p class="modal__form--footer-p">Chưa có tài khoản?</p>
+          <p class="modal__form--footer-p1" id="form__login-link-to-register">Đăng ký</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal__register" id="Modal-register">
+    <div class="modal__container">
+      <div class="modal__form">
+        <div class="modal__form--heading">
+          <h3 class="modal__form--heading-h3">Đăng ký</h3>
+          <span class="modal__form--heading-close" id="close-register">&times;</span>
+        </div>
+        <div class="modal__form--content">
+          <input
+            class="modal__form--content-input modal__form--content-input1"
+            type="text"
+            placeholder="Email"
+          />
+          <div class="modal__form--content-input-pass modal__form--content-input-pass-register">
+            <input
+              class="modal__form--content-input"
+              type="password"
+              placeholder="Mật khẩu" id="show-pass-register1"
+            />
+            <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-register1"></i>
+          </div>
+          <div class="modal__form--content-input-pass modal__form--content-input-pass-register">
+            <input
+              class="modal__form--content-input"
+              type="password"
+              placeholder="Nhập lại mật khẩu" id="show-pass-register2"
+            />
+            <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-register2"></i>
+          </div>
+          <button class="modal__form--content-btn" type="submit">
+            ĐĂNG KÝ
+          </button>
+          <div class="modal__form--footer modal__form--footer-register">
+            <div class="modal__form--footer-wrap">
+              <p class="modal__form--footer-p">Bạn đã có tài khoản?</p>
+              <p class="modal__form--footer-p1" id="form__register-link-to-login">Đăng nhập</p>
+            </div>  
+            <p class="modal__form--footer-p modal__form--footer-p-register">Tiếp tục nghĩa là bạn đồng ý với các <span class="modal__form--footer-span">Điều khoản và điều kiện,</span>
+              cũng như các <span class="modal__form--footer-span">Chính sách bảo mật</span> của TRIP.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="./data.js"></script>
+    <script src="../base.js"></script>
+</body>
+</html>
