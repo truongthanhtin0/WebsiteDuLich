@@ -115,13 +115,15 @@
     /* justify-content: space-evenly; */
     margin-bottom: 16px;
     padding: 10px 20px;
+    border: 1px solid #ccc;
     box-shadow: 0 1px 3px #ccc;
     border-radius: 4px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .hotel__list--item:hover{
     right: -4px;
+    border-color: var(--primary-color);
 }
 
 .hotel__list--item-img{
@@ -138,8 +140,15 @@
 }
 
 .list__item--wrapper-title{
-    font-size: 2rem;
+    display: block;
+    display: -webkit-box;
     margin: 20px 0 10px 0;
+    max-height: 44px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 2rem;
+    line-height: 2.2rem;
 }
 
 .list__item--wrapper-div{
@@ -177,9 +186,11 @@
 }
 
 .list__item__wrapper-p{
-    font-size: 1.6rem;
     margin: 6px 12px 6px 0;
-    /* line-height: 1.6rem; */
+    font-size: 1.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .list__item--evaluate{
@@ -210,16 +221,37 @@
 }
 
 .hotel__list--item-discount{
-    font-size: 2rem;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    padding: 4px;
+    /* display: flex;
+    align-items: center;
+    height: 30px; */
     margin: 8px;
+    padding: 6px 4px;
+    font-size: 2rem;
+    background-color: #fa4e23;
+    color: var(--white-color);
     border-radius: 2px;
+}
+
+.hotel__list--item-discount-not{
+    padding: 0;
 }
 
 .hotel__list--item-price{
     font-size: 2.6rem;
     color: #e73004;
-    margin: 8px 0 39px;
+    margin: 8px 0 12px;
+}
+
+.hotel__list--item-btn{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    outline: none;
+    float: right;
+    margin: 10px 10px 10px 0;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
 }
