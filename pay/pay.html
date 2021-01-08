@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />  
+    <link
+      rel="stylesheet"
+      href="/font/fontawesome-free-5.14.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="pay.css" />
+    <link rel="stylesheet" href="../base.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="header__menu">
+            <div class="logo">
+              <a href="../TrangChu/TrangChu.html"><img src="/Image/logoDTU.png" alt="" /></a>
+            </div>
+            <div class="submenu">
+              <div class="submenu__1">
+                <div class="submenu__1--left">
+                  <p class="submenu__1--left-hotline">Hotline:</p>
+                  <p href="" class="submenu__1--left-phone">093.5633219</p>
+                </div>
+                <div class="submenu__1--right">
+                  <button
+                    class="submenu__1--right-account submenu__1--right-account-login"
+                    id="login"
+                  >
+                    Đăng nhập
+                  </button>
+                  <button
+                    class="submenu__1--right-account submenu__1--right-account-register"
+                    id="register"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+              </div>
+              <div class="submenu__2">
+                <a href="../VeMayBay/VeMayBay.html" class="submenu__2--link">VÉ MÁY BAY</a>
+                <a href="../SanGiaRe/SanGiaRe.html" class="submenu__2--link">SĂN GIÁ RẺ</a>
+                <a href="../DichVu/DichVu.html" class="submenu__2--link">DỊCH VỤ</a>
+                <a href="../TinTuc/TinTuc.html" class="submenu__2--link">TIN TỨC</a>
+                <a href="../LienHe/LienHe.html" class="submenu__2--link">LIÊN HỆ</a>
+              </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="grid">
+        <div class="grid__wrapper">
+        <div class="grid__choose">
+            <div class="search__datetime">
+                <input type="date" name="" id="search__datetime--come" onchange="handledate(event,'come')"/>
+                <input type="date" name="" id="search__datetime--leave" onchange="handledate(event,'leave')" />
+              </div>
+              <!-- <div class="search__people">
+                <div class="search__people--wrapper">
+                  <i class="fas fa-user-friends search__icon--people"></i>
+                  <div class="search__people--wrap">
+                    <p class="search__people--wrap-title">1 người lớn</p>
+                    <p class="search__people--wrap-content">1 phòng</p>
+                  </div>
+                </div>
+                <i class="fas fa-sort-down search__icon--down"></i>
+    
+                <ul class="search__people--list">
+                  <li class="search__people--list-item">
+                    <a href="" class="search__people--list-item-link"
+                      >Cặp đôi/1 phòng</a
+                    >
+                  </li>
+                  <li class="search__people--list-item">
+                    <a href="" class="search__people--list-item-link"
+                      >Theo gia đinh</a
+                    >
+                  </li>
+                  <li class="search__people--list-item">
+                    <a href="" class="search__people--list-item-link"
+                      >Theo đoàn/nhóm</a
+                    >
+                  </li>
+                  <li class="search__people--list-item">
+                    <a href="" class="search__people--list-item-link"
+                      >Đi công tác</a
+                    >
+                  </li>
+                </ul>
+              </div> -->
+        </div>
+        <div class="grid__content">
+            <div class="content__infor">
+              <h1 class="content__title">Thông tin đặt phòng</h1>
+              <h3 class="content__title--sub">Thông tin người đặt phòng</h3>
+              <div class="content__infor--wrapper">
+                <div class="content__infor--div">
+                  <div class="content__infor--div-sub">
+                    <p>Họ và tên</p>
+                    <span>*</span>
+                  </div> 
+                  <div class="content__infor--div-sub1">
+                    <div class="content__infor--div-left content__infor--div-left-active">
+                      <p>Anh</p>
+                      <i class="fas fa-chevron-down"></i>
+
+                      <ul class="left__active--list">
+                        <li class="left__active--list-item">Anh</li>
+                        <li class="left__active--list-item">Chị</li>
+                        <li class="left__active--list-item">Khác</li>
+                      </ul>
+                    </div>
+                    <input type="text" class="content__infor--div-input content__infor--div-input-NotRadius" placeholder="Họ và tên">
+                  </div>           
+                </div>
+                <div class="content__infor--div">
+                  <div class="content__infor--div-sub">
+                    <p>CMND/Căn cước công dân</p>
+                    <span>*</span>
+                  </div> 
+                  <div class="content__infor--div-sub1">
+                    <input type="text" class="content__infor--div-input" placeholder="CMND">
+                  </div> 
+                </div>
+              </div>
+              <div class="content__infor--wrapper">
+                <div class="content__infor--div">
+                  <div class="content__infor--div-sub">
+                    <p>Số điện thoại</p>
+                    <span>*</span>
+                  </div>     
+                  <div class="content__infor--div-sub1">
+                    <div class="content__infor--div-left">
+                      <p>(+84)</p>
+                    </div>
+                    <input type="text" class="content__infor--div-input content__infor--div-input-NotRadius" placeholder="Số điện thoại">
+                  </div>        
+                </div>
+                <div class="content__infor--div">
+                  <div class="content__infor--div-sub">
+                    <p>Địa chỉ email</p>
+                    <span>*</span>
+                  </div> 
+                  <div class="content__infor--div-sub1">
+                    <input type="text" class="content__infor--div-input" placeholder="Email">
+                  </div> 
+                </div>
+              </div>
+              <div class="content__infor--wrapper content__infor--wrapper-check">
+                <input type="checkbox" name="" class="content__infor--wrapper-checkbox">
+                <p class="content__infor--wrapper-confirm">Tôi là người nhận phòng</p>
+              </div>
+              <button class="content__infor--btn">Tiếp tục</button>
+            </div>
+            <div class="content__pay">
+              <!-- <h3 class="content__title--sub">Thông tin đơn đặt phòng</h3>
+              <img src="https://i.travelapi.com/hotels/7000000/6950000/6946000/6945951/2ec3d362_b.jpg" alt="" class="content__pay--img">
+              <div class="content__infor--div-sub">
+                <p class="pay__hotel--title">Khách sạn Hà Nội LuLLaby</p>
+                <div class="content__infor--div-sub">
+                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                  <i class="fas fa-star pay__icon--star"></i>
+                </div>
+              </div>
+              <div class="content__infor--div-sub">
+                <i class="fas fa-map-marker-alt pay__icon--location"></i>
+                <p class="content__pay--p">Ngõ Trạm, Hàng Bông, Hoàn Kiếm, Hà Nội, Việt Nam</p>
+              </div>
+              <div class="content__infor--wrapper">
+                <p class="content__pay--p">Giá phòng</p>
+                <p class="content__pay--p">445.000đ/1 đêm</p>
+              </div>
+              <div class="content__infor--wrapper">
+                <p class="content__pay--p">Ngày nhận phòng</p>
+                <p class="content__pay--p">17/12/2020</p>
+              </div>
+              <div class="content__infor--wrapper">
+                <p class="content__pay--p">Ngày trả phòng</p>
+                <p class="content__pay--p">19/12/2020</p>
+              </div>
+              <div class="content__infor--wrapper">
+                <p class="content__pay--p">Số đêm</p>
+                <p class="content__pay--p">1</p>
+              </div>
+              <div class="content__infor--wrapper content__infor--wrapper-active">
+                <p class="content__pay--p content__pay--p-price">Giá từ khách sạn</p>
+                <p class="content__pay--p content__pay--p-price1">450.000đ</p>
+              </div>
+              <div class="content__infor--wrapper">
+                <p class="content__pay--p content__pay--p-price">VAT và dịch vụ khách sạn</p>
+                <p class="content__pay--p content__pay--p-price2">50.000đ</p>
+              </div>
+              <div class="content__infor--wrapper content__infor--wrapper-active1">
+                <p class="content__pay--p content__pay--p-sum">Tổng tiền:</p>
+                <p class="content__pay--p content__pay--p-sum1">500.000đ</p>
+              </div> -->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="grid">
+          <div class="grid__row">
+            <div class="grid__column">
+              <h3 class="footer__heading">GIỚI THIỆU</h3>
+              <ul class="footer__list">
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link"
+                    >Giới thiệu về Trip</a
+                  >
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link"
+                    >Điều khoản sử dụng</a
+                  >
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link">Quy chế hoạt động</a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link"
+                    >Chính sách bảo mật</a
+                  >
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link">Blog du lịch</a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link">Tuyển dụng CTV</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="grid__column">
+              <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+              <ul class="footer__list">
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link"
+                    >Trung tâm trợ giúp</a
+                  >
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link">Hướng dẫn</a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link">Trả & đổi phòng</a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="" class="footer__list--item-link">Chính sách hỗ trợ</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="grid__column">
+              <h3 class="footer__heading">THANH TOÁN</h3>
+              <ul class="footer__list"></ul>
+            </div>
+    
+            <div class="grid__column">
+              <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3>
+              <ul class="footer__list">
+                <li class="footer__list--item">
+                  <a href=""
+                    ><i class="fab fa-facebook"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li class="footer__list--item">
+                  <a href=""
+                    ><i class="far fa-envelope"></i>
+                    Gmail
+                  </a>
+                </li>
+                <li class="footer__list--item">
+                  <a href=""
+                    ><i class="fab fa-instagram"></i>
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="grid__column">
+              <h3 class="footer__heading">Tải ngay ứng dụng</h3>
+              <div class="footer__download">
+                <img
+                  src="https://img.tickid.vn/photos/qrcode_base64/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ"
+                  alt=""
+                  class="footer__download--qr"
+                />
+                <div class="footer__download--apps">
+                  <a class="footer__download--apps-link" href="">
+                    <img
+                      src="https://statics.vntrip.vn/images/logo/appStore.png"
+                      alt=""
+                      class="footer__download--apps-icon"
+                    />
+                  </a>
+                  <a class="footer__download--apps-link" href="">
+                    <img
+                      src="https://statics.vntrip.vn/images/logo/googlePlay.png"
+                      alt=""
+                      class="footer__download--apps-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal modal__login" id="Modal-login">
+        <div class="modal__container">
+          <div class="modal__form">
+            <div class="modal__form--heading">
+              <h3 class="modal__form--heading-h3">Đăng nhập</h3>
+              <span class="modal__form--heading-close" id="close-login">&times;</span>
+            </div>
+            <div class="modal__form--content">
+              <input
+                class="modal__form--content-input modal__form--content-input1"
+                type="text"
+                placeholder="Email"
+              />
+              <div class="modal__form--content-input-pass">
+                <input
+                  class="modal__form--content-input"
+                  type="password"
+                  placeholder="Mật khẩu" id="show-pass-login"
+                />
+                <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-login"></i>
+              </div>
+              <p class="modal__form--content-forget">Quên mật khẩu</p>
+              <button class="modal__form--content-btn" type="submit">
+                ĐĂNG NHẬP
+              </button>
+              <div class="modal__form--content-or">
+                <span class="modal__form--content-or-span"></span>
+                <p class="modal__form--content-or-p">Hoặc</p>
+                <span class="modal__form--content-or-span"></span>
+              </div>
+              <div class="modal__form--content-link">
+                <i
+                  class="fab fa-facebook-square modal__form--content-link-iconFB"
+                ></i>
+                <p class="modal__form--content-link-p">Đăng nhập bằng Facebook</p>
+              </div>
+              <div class="modal__form--content-link">
+                <img
+                  class="modal__form--content-link-iconGG"
+                  src="https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png"
+                  alt=""
+                />
+                <p class="modal__form--content-link-p">Đăng nhập bằng Google</p>
+              </div>
+            </div>
+            <div class="modal__form--footer modal__form--footer-login">
+              <p class="modal__form--footer-p">Chưa có tài khoản?</p>
+              <p class="modal__form--footer-p1" id="form__login-link-to-register">Đăng ký</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal modal__register" id="Modal-register">
+        <div class="modal__container">
+          <div class="modal__form">
+            <div class="modal__form--heading">
+              <h3 class="modal__form--heading-h3">Đăng ký</h3>
+              <span class="modal__form--heading-close" id="close-register">&times;</span>
+            </div>
+            <div class="modal__form--content">
+              <input
+                class="modal__form--content-input modal__form--content-input1"
+                type="text"
+                placeholder="Email"
+              />
+              <div class="modal__form--content-input-pass modal__form--content-input-pass-register">
+                <input
+                  class="modal__form--content-input"
+                  type="password"
+                  placeholder="Mật khẩu" id="show-pass-register1"
+                />
+                <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-register1"></i>
+              </div>
+              <div class="modal__form--content-input-pass modal__form--content-input-pass-register">
+                <input
+                  class="modal__form--content-input"
+                  type="password"
+                  placeholder="Nhập lại mật khẩu" id="show-pass-register2"
+                />
+                <i class="fas fa-eye-slash modal__form--content-showpass" id="icon-eye-register2"></i>
+              </div>
+              <button class="modal__form--content-btn" type="submit">
+                ĐĂNG KÝ
+              </button>
+              <div class="modal__form--footer modal__form--footer-register">
+                <div class="modal__form--footer-wrap">
+                  <p class="modal__form--footer-p">Bạn đã có tài khoản?</p>
+                  <p class="modal__form--footer-p1" id="form__register-link-to-login">Đăng nhập</p>
+                </div>  
+                <p class="modal__form--footer-p modal__form--footer-p-register">Tiếp tục nghĩa là bạn đồng ý với các <span class="modal__form--footer-span">Điều khoản và điều kiện,</span>
+                  cũng như các <span class="modal__form--footer-span">Chính sách bảo mật</span> của TRIP.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./pay.js"></script>
+    <script src="../base.js"></script>
+</body>
+</html>

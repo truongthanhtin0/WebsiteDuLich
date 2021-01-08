@@ -627,13 +627,14 @@
 }
 
 .wrap__layout--name{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 500;
     color: var(--text-color);
     margin: 10px 0;
 }
 
 .wrap__layout--place{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     margin: 10px 0;
 }
@@ -643,7 +644,7 @@
 }
 
 .wrap__layout--rating-icon{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #ffa726;
 }
 
@@ -654,17 +655,17 @@
 }
 
 .wrap__layout--more-icon{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-right: 8px;
 }
 
 .wrap__layout--more-p{
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }   
 
 .wrap__layout--evaluate{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 10px 0;
 }
 
@@ -678,7 +679,7 @@
     font-size: 1.4rem;
     font-weight: 500;
     border: 1px solid #ccc;
-    background-color: #e93a3a;
+    background-color: #fa4e23;;
     color: var(--white-color);
     border-radius: 2px;
     height: 24px;
@@ -689,16 +690,19 @@
 }
 
 .wrap__layout--cost{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin: 10px 0;
     text-decoration: line-through;
 }
 
 .wrap__layout--price{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 500;
     margin: 6px 0 10px 0;
     position: absolute;
     bottom: 0;
+    color: #fa4e23;;
 }
 
 .wrap__layout--btn{
