@@ -35,9 +35,9 @@ const handledate = (e, type) => {
     }  
 };
 
-const a = document.querySelector(".content__pay");
+const content__pay1 = document.querySelector(".content__pay1");
 
-a.innerHTML += `
+content__pay1.innerHTML += `
   <h3 class="content__title--sub">Thông tin đơn đặt phòng</h3>
   <img src=${y.url} alt="" class="content__pay--img">
   <div class="content__infor--div-sub">
@@ -79,3 +79,51 @@ a.innerHTML += `
     <p class="content__pay--p content__pay--p-sum1 "><span class="total-price-hotel">${totalPrice.toLocaleString()}</span>đ</p>
   </div>
 `;
+
+const content__pay2 = document.querySelector(".content__pay2");
+
+content__pay2.innerHTML += `
+  <h3 class="content__title--sub">Thông tin đặt phòng</h3>
+  <div class="content__infor--wrapper">
+    <p class="content__pay--p">Người đặt phòng</p>
+    <p class="content__pay--p input__hoten">${localStorage.getItem("input__hoten")}</p>
+  </div>
+  <div class="content__infor--wrapper">
+    <p class="content__pay--p">CMND/Căn cước công dân</p>
+    <p class="content__pay--p input__cmnd">${localStorage.getItem("input__cmnd")}</p>
+  </div>
+  <div class="content__infor--wrapper">
+    <p class="content__pay--p">Số điện thoại</p>
+    <p class="content__pay--p input__sdt">${localStorage.getItem("input__sdt")}</p>
+  </div>
+  <div class="content__infor--wrapper">
+    <p class="content__pay--p">Email</p>
+    <p class="content__pay--p input__email">${localStorage.getItem("input__email")}</p>
+  </div>
+`;
+
+const content__infor__active1 = document.querySelector(".content__infor--active1");
+const content__infor__active2 = document.querySelector(".content__infor--active2");
+
+const getDataInput = () => {
+  let input__hoten = document.querySelector("#input__Hoten").value;
+  localStorage.setItem("input__hoten", input__hoten);
+  let input__cmnd = document.querySelector("#input__cmnd").value;
+  localStorage.setItem("input__cmnd", input__cmnd);
+  let input__sdt = document.querySelector("#input__sdt").value;
+  localStorage.setItem("input__sdt", input__sdt);
+  let input__email = document.querySelector("#input__email").value;
+  localStorage.setItem("input__email", input__email);
+
+  $(".input__hoten").text(`${localStorage.getItem("input__hoten")}`)
+  $(".input__cmnd").text(`${localStorage.getItem("input__cmnd")}`)
+  $(".input__sdt").text(`${localStorage.getItem("input__sdt")}`)
+  $(".input__email").text(`${localStorage.getItem("input__email")}`)
+
+  content__infor__active1.style.display = "none";
+  content__infor__active2.style.display = "block";
+  content__pay2.style.display = "block";
+}
+
+
+

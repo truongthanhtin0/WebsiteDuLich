@@ -133,10 +133,13 @@
 
 .content__infor{
     width: 70%;
+    height: fit-content;
     padding: 20px;
     background-color: var(--white-color);
     margin-right: 40px;
     border-radius: 6px;
+    box-shadow: 0 1px 3px #ccc;
+
 }
 
 .content__title{
@@ -288,7 +291,8 @@
 }
 
 .content__infor--wrapper-checkbox{
-    font-size: 1.4rem;
+    height: 16px;
+    width: 16px;
     margin-right: 8px;
 }
 
@@ -321,9 +325,11 @@
 /* Content Pay */
 .content__pay{
     width: 30%;
-    background-color: var(--white-color);
-    padding: 20px;
-    border-radius: 6px;
+}
+
+.content__pay .content__title--sub{
+    padding: 10px 0;
+    margin-top: 0;
 }
 
 .content__pay--img{
@@ -415,4 +421,94 @@
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
+}
+
+/* Pay1 */
+.content__pay1{
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px #ccc;
+}
+
+/* Pay2 */
+.content__pay2{
+    display: none;
+    margin-top: 20px;
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px #ccc;
+}
+
+/* Thêm 1 class vào .content__infor để active display:none */
+.content__infor--active1{
+    /* display: none; */
+}
+
+/* .content__infor--active2 (chọn hình thẻ thanh toán)*/
+.content__infor--active2{
+    display: none;
+}
+
+.pay__list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.pay__list--item{
+    display: flex;
+    margin: 8px 0;
+    padding: 0 30px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pay__list--item:hover{
+    background-color: #f9f9f9;
+}
+
+.item__radio{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.item__img{
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    object-fit: contain;
+}
+
+.item__wrapper--title{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.item__wrapper--description{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.item__wrapper--cost{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
+    font-style: italic;
+}
+
+.item__wrapper--cost1{
+    color: red;
+}
+
+.content__infor--wrapper-span{
+    color: var(--primary-color);
+    cursor: pointer;
 }

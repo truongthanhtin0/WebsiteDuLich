@@ -118,7 +118,7 @@
     /* border: 1px solid #ccc; */
     box-shadow: 0 1px 3px #ccc;
     border-radius: 4px;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .hotel__list--item:hover{

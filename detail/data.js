@@ -1288,7 +1288,7 @@ const renderHotel = (place) => {
   return arrPlace(place).map(
     (item, index) =>
       (hotel__list.innerHTML += `
-      <li class="hotel__list--item" key="hotel-list-${item.id}-${index}">
+      <li class="hotel__list--item" key="hotel-list-${item.id}-${index}" onclick="pay(${item.id})">
             <img src=${item.url} class="hotel__list--item-img" >
             <div class="list__item--wrapper">
               <h3 class="list__item--wrapper-title">${item.name}</h3>
@@ -1351,9 +1351,7 @@ const renderHotel = (place) => {
                 
               </div>
               <p class="hotel__list--item-price">${item.price.toLocaleString()}đ</p>
-              <button class="hotel__list--item-btn"  onclick="pay(${
-                item.id
-              })">ĐẶT PHÒNG</button>
+              <button class="hotel__list--item-btn">ĐẶT PHÒNG</button>
             </div>
           </li>
       `)
@@ -1372,6 +1370,9 @@ const pay = (id) => {
   location.replace("http://127.0.0.1:5500/pay/pay.html");
   localStorage.setItem("dataDetail", JSON.stringify(dataDetail));
 };
-//
-// a=localStorage.getItem("dataDetail")
-// b=JSON.parse(a)
+
+const starNumber = (number) => {
+  let rate = data.hotel.filter((item) => item.rate == number && item.place == localStorage.getItem("place"));
+  console.log(rate);
+}
+

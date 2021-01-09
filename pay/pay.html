@@ -58,48 +58,15 @@
     </div>  
 
     <div class="grid">
-        <div class="grid__wrapper">
+      <div class="grid__wrapper">
         <div class="grid__choose">
             <div class="search__datetime">
                 <input type="date" name="" id="search__datetime--come" onchange="handledate(event,'come')"/>
                 <input type="date" name="" id="search__datetime--leave" onchange="handledate(event,'leave')" />
               </div>
-              <!-- <div class="search__people">
-                <div class="search__people--wrapper">
-                  <i class="fas fa-user-friends search__icon--people"></i>
-                  <div class="search__people--wrap">
-                    <p class="search__people--wrap-title">1 người lớn</p>
-                    <p class="search__people--wrap-content">1 phòng</p>
-                  </div>
-                </div>
-                <i class="fas fa-sort-down search__icon--down"></i>
-    
-                <ul class="search__people--list">
-                  <li class="search__people--list-item">
-                    <a href="" class="search__people--list-item-link"
-                      >Cặp đôi/1 phòng</a
-                    >
-                  </li>
-                  <li class="search__people--list-item">
-                    <a href="" class="search__people--list-item-link"
-                      >Theo gia đinh</a
-                    >
-                  </li>
-                  <li class="search__people--list-item">
-                    <a href="" class="search__people--list-item-link"
-                      >Theo đoàn/nhóm</a
-                    >
-                  </li>
-                  <li class="search__people--list-item">
-                    <a href="" class="search__people--list-item-link"
-                      >Đi công tác</a
-                    >
-                  </li>
-                </ul>
-              </div> -->
         </div>
         <div class="grid__content">
-            <div class="content__infor">
+            <div class="content__infor content__infor--active1">
               <h1 class="content__title">Thông tin đặt phòng</h1>
               <h3 class="content__title--sub">Thông tin người đặt phòng</h3>
               <div class="content__infor--wrapper">
@@ -119,7 +86,7 @@
                         <li class="left__active--list-item">Khác</li>
                       </ul>
                     </div>
-                    <input type="text" class="content__infor--div-input content__infor--div-input-NotRadius" placeholder="Họ và tên">
+                    <input type="text" class="content__infor--div-input content__infor--div-input-NotRadius" id="input__Hoten" placeholder="Họ và tên">
                   </div>           
                 </div>
                 <div class="content__infor--div">
@@ -128,7 +95,7 @@
                     <span>*</span>
                   </div> 
                   <div class="content__infor--div-sub1">
-                    <input type="text" class="content__infor--div-input" placeholder="CMND">
+                    <input type="text" class="content__infor--div-input" id="input__cmnd" placeholder="CMND">
                   </div> 
                 </div>
               </div>
@@ -142,7 +109,7 @@
                     <div class="content__infor--div-left">
                       <p>(+84)</p>
                     </div>
-                    <input type="text" class="content__infor--div-input content__infor--div-input-NotRadius" placeholder="Số điện thoại">
+                    <input type="text" class="content__infor--div-input content__infor--div-input-NotRadius" id="input__sdt" placeholder="Số điện thoại">
                   </div>        
                 </div>
                 <div class="content__infor--div">
@@ -151,7 +118,7 @@
                     <span>*</span>
                   </div> 
                   <div class="content__infor--div-sub1">
-                    <input type="text" class="content__infor--div-input" placeholder="Email">
+                    <input type="text" class="content__infor--div-input" id="input__email" placeholder="Email">
                   </div> 
                 </div>
               </div>
@@ -159,56 +126,126 @@
                 <input type="checkbox" name="" class="content__infor--wrapper-checkbox">
                 <p class="content__infor--wrapper-confirm">Tôi là người nhận phòng</p>
               </div>
+              <button class="content__infor--btn" onclick="getDataInput()">Tiếp tục</button>
+            </div>
+            <div class="content__infor content__infor--active2">
+              <h1 class="content__title">THÔNG TIN THANH TOÁN</h1>
+              <h3 class="content__title--sub">Chọn hình thức thanh toán</h3>
+              <ul class="pay__list">
+                <li class="pay__list--item">
+                  <input type="radio" class="item__radio">
+                  <img src="https://statics.vntrip.vn/images/checkout/i-domestic.png" alt="" class="item__img">
+                  <div class="item__wrapper">
+                    <p class="item__wrapper--title">Thanh toán bằng Thẻ nội địa</p>
+                    <p class="item__wrapper--description">Quý khách sẽ được chuyển đến cổng thanh toán ZaloPay để thanh toán.</p>
+                    <p class="item__wrapper--cost">Phí thanh toán: <span class="item__wrapper--cost1">0₫</span></p>
+                  </div>
+                </li>
+                <li class="pay__list--item">
+                  <input type="radio" class="item__radio">
+                  <img src="https://statics.vntrip.vn/images/checkout/i-visa.png" alt="" class="item__img">
+                  <div class="item__wrapper">
+                    <p class="item__wrapper--title">Thanh toán bằng Thẻ quốc tế</p>
+                    <p class="item__wrapper--description">Quý khách sẽ được chuyển đến cổng thanh toán ZaloPay để thanh toán.</p>
+                    <p class="item__wrapper--cost">Phí thanh toán: <span class="item__wrapper--cost1">0₫</span></p>
+                  </div>
+                </li>
+                <li class="pay__list--item">
+                  <input type="radio" class="item__radio">
+                  <img src="https://statics.vntrip.vn/images/checkout/i-airpay.png" alt="" class="item__img">
+                  <div class="item__wrapper">
+                    <p class="item__wrapper--title">Thanh toán bằng ví AirPay</p>
+                    <p class="item__wrapper--description">Quý khách sẽ được chuyển đến cổng thanh toán ZaloPay để thanh toán.</p>
+                    <p class="item__wrapper--cost">Phí thanh toán: <span class="item__wrapper--cost1">0₫</span></p>
+                  </div>
+                </li>
+                <li class="pay__list--item">
+                  <input type="radio" class="item__radio">
+                  <img src="https://statics.vntrip.vn/images/checkout/i-zalopay.png" alt="" class="item__img">
+                  <div class="item__wrapper">
+                    <p class="item__wrapper--title">Thanh toán bằng ví ZaloPay</p>
+                    <p class="item__wrapper--description">Quý khách sẽ được chuyển đến cổng thanh toán ZaloPay để thanh toán.</p>
+                    <p class="item__wrapper--cost">Phí thanh toán: <span class="item__wrapper--cost1">0₫</span></p>
+                  </div>
+                </li>
+                <li class="pay__list--item">
+                  <input type="radio" class="item__radio">
+                  <img src="https://statics.vntrip.vn/images/checkout/i-momo.png" alt="" class="item__img">
+                  <div class="item__wrapper">
+                    <p class="item__wrapper--title">Thanh toán bằng ví MoMo</p>
+                    <p class="item__wrapper--description">Quý khách sẽ được chuyển đến cổng thanh toán ZaloPay để thanh toán.</p>
+                    <p class="item__wrapper--cost">Phí thanh toán: <span class="item__wrapper--cost1">0₫</span></p>
+                  </div>
+                </li>
+                <li class="pay__list--item">
+                  <input type="radio" class="item__radio">
+                  <img src="https://statics.vntrip.vn/images/checkout/i-transfer.png" alt="" class="item__img">
+                  <div class="item__wrapper">
+                    <p class="item__wrapper--title">Thanh toán chuyển khoản</p>
+                    <p class="item__wrapper--description">Quý khách sẽ được chuyển đến cổng thanh toán ZaloPay để thanh toán.</p>
+                    <p class="item__wrapper--cost">Phí thanh toán: <span class="item__wrapper--cost1">0₫</span></p>
+                  </div>
+                </li>
+              </ul>
+              <div class="content__infor--wrapper content__infor--wrapper-check">
+                <input type="checkbox" name="" class="content__infor--wrapper-checkbox">
+                <p class="content__infor--wrapper-confirm">Tôi xác nhận đã đọc và đồng ý với <span class="content__infor--wrapper-span">Điều khoản và Điều kiện</span> của Trip.</p>
+              </div>
               <button class="content__infor--btn">Tiếp tục</button>
             </div>
             <div class="content__pay">
-              <!-- <h3 class="content__title--sub">Thông tin đơn đặt phòng</h3>
-              <img src="https://i.travelapi.com/hotels/7000000/6950000/6946000/6945951/2ec3d362_b.jpg" alt="" class="content__pay--img">
-              <div class="content__infor--div-sub">
-                <p class="pay__hotel--title">Khách sạn Hà Nội LuLLaby</p>
+              <div class="content__pay1">
+                <!-- <h3 class="content__title--sub">Thông tin đơn đặt phòng</h3>
+                <img src="https://i.travelapi.com/hotels/7000000/6950000/6946000/6945951/2ec3d362_b.jpg" alt="" class="content__pay--img">
                 <div class="content__infor--div-sub">
-                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                  <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                  <i class="fas fa-star pay__icon--star"></i>
+                  <p class="pay__hotel--title">Khách sạn Hà Nội LuLLaby</p>
+                  <div class="content__infor--div-sub">
+                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
+                    <i class="fas fa-star pay__icon--star"></i>
+                  </div>
                 </div>
+                <div class="content__infor--div-sub">
+                  <i class="fas fa-map-marker-alt pay__icon--location"></i>
+                  <p class="content__pay--p">Ngõ Trạm, Hàng Bông, Hoàn Kiếm, Hà Nội, Việt Nam</p>
+                </div>
+                <div class="content__infor--wrapper">
+                  <p class="content__pay--p">Giá phòng</p>
+                  <p class="content__pay--p">445.000đ/1 đêm</p>
+                </div>
+                <div class="content__infor--wrapper">
+                  <p class="content__pay--p">Ngày nhận phòng</p>
+                  <p class="content__pay--p">17/12/2020</p>
+                </div>
+                <div class="content__infor--wrapper">
+                  <p class="content__pay--p">Ngày trả phòng</p>
+                  <p class="content__pay--p">19/12/2020</p>
+                </div>
+                <div class="content__infor--wrapper">
+                  <p class="content__pay--p">Số đêm</p>
+                  <p class="content__pay--p">1</p>
+                </div>
+                <div class="content__infor--wrapper content__infor--wrapper-active">
+                  <p class="content__pay--p content__pay--p-price">Giá từ khách sạn</p>
+                  <p class="content__pay--p content__pay--p-price1">450.000đ</p>
+                </div>
+                <div class="content__infor--wrapper">
+                  <p class="content__pay--p content__pay--p-price">VAT và dịch vụ khách sạn</p>
+                  <p class="content__pay--p content__pay--p-price2">50.000đ</p>
+                </div>
+                <div class="content__infor--wrapper content__infor--wrapper-active1">
+                  <p class="content__pay--p content__pay--p-sum">Tổng tiền:</p>
+                  <p class="content__pay--p content__pay--p-sum1">500.000đ</p>
+                </div> -->
               </div>
-              <div class="content__infor--div-sub">
-                <i class="fas fa-map-marker-alt pay__icon--location"></i>
-                <p class="content__pay--p">Ngõ Trạm, Hàng Bông, Hoàn Kiếm, Hà Nội, Việt Nam</p>
+              <div class="content__pay2">
+                
               </div>
-              <div class="content__infor--wrapper">
-                <p class="content__pay--p">Giá phòng</p>
-                <p class="content__pay--p">445.000đ/1 đêm</p>
-              </div>
-              <div class="content__infor--wrapper">
-                <p class="content__pay--p">Ngày nhận phòng</p>
-                <p class="content__pay--p">17/12/2020</p>
-              </div>
-              <div class="content__infor--wrapper">
-                <p class="content__pay--p">Ngày trả phòng</p>
-                <p class="content__pay--p">19/12/2020</p>
-              </div>
-              <div class="content__infor--wrapper">
-                <p class="content__pay--p">Số đêm</p>
-                <p class="content__pay--p">1</p>
-              </div>
-              <div class="content__infor--wrapper content__infor--wrapper-active">
-                <p class="content__pay--p content__pay--p-price">Giá từ khách sạn</p>
-                <p class="content__pay--p content__pay--p-price1">450.000đ</p>
-              </div>
-              <div class="content__infor--wrapper">
-                <p class="content__pay--p content__pay--p-price">VAT và dịch vụ khách sạn</p>
-                <p class="content__pay--p content__pay--p-price2">50.000đ</p>
-              </div>
-              <div class="content__infor--wrapper content__infor--wrapper-active1">
-                <p class="content__pay--p content__pay--p-sum">Tổng tiền:</p>
-                <p class="content__pay--p content__pay--p-sum1">500.000đ</p>
-              </div> -->
             </div>
         </div>
-        </div>
+      </div>
     </div>
 
     <div class="footer">
