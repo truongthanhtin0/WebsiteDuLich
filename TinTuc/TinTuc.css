@@ -24,6 +24,10 @@
     margin: 20px 0;
 }
 
+.content__list--item:hover{
+    border-color: var(--primary-color);
+}
+
 .content__list--item-link{
     text-decoration: none;
     color: transparent;

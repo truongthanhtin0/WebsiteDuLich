@@ -111,14 +111,14 @@
             <i class="fas fa-sort-down search__icon--down"></i>
 
             <ul class="search__place--list">
-              <li class="search__place--list-item">
+              <li class="search__place--list-item" onclick="onClickPlace('HCM')">
                 <a href="" class="search__place--list-item-link">Hồ Chí Minh</a>
               </li>
               <li class="search__place--list-item">
                 <a href="" class="search__place--list-item-link">Hà Nội</a>
               </li>
-              <li class="search__place--list-item">
-                <a href="" class="search__place--list-item-link">Đà Nẵng</a>
+              <li class="search__place--list-item" onclick="onClickPlace('Da_Nang')">
+                <a class="search__place--list-item-link">Đà Nẵng</a>
               </li>
               <li class="search__place--list-item">
                 <a href="" class="search__place--list-item-link">Đà Lạt</a>
@@ -208,8 +208,8 @@
             </ul>
           </div>
           <div class="search__datetime">
-            <input type="datetime-local" name="" id="search__datetime--come" />
-            <input type="datetime-local" name="" id="search__datetime--leave" />
+            <input type="date" name="" id="search__datetime--come" />
+            <input type="date" name="" id="search__datetime--leave" />
           </div>
           <div class="search__people">
             <i class="fas fa-user-friends search__icon--people"></i>

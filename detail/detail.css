@@ -56,9 +56,13 @@
     cursor: pointer;
 }
 
-.search__rating, .search__price{
+.search__rating{
     margin-top: 20px;
     border-bottom: 1px solid #bbb;
+}
+
+.search__price{
+    margin-top: 20px;
 }
 
 .search__list{
@@ -94,9 +98,6 @@
     margin: 4px 0;
 }
 
-.search__type{
-    margin-top: 20px;
-}
 /* ------- */
 
 .grid__content{
@@ -125,6 +126,7 @@
     right: -4px;
     /* border-color: var(--primary-color); */
     border: solid var(--primary-color);
+    transition: all .1s;
 }
 
 .hotel__list--item-img{

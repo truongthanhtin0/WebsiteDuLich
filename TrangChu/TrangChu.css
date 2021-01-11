@@ -261,9 +261,10 @@
 }
 
 #search__datetime--come, #search__datetime--leave{
-    font-size: 1.3rem;
-    width: 190px;
+    width: 150px;
     height: 64px;
+    padding: 0 12px;
+    font-size: 1.3rem;
     color: var(--text-color);
     opacity: 0.8;
     outline: none;

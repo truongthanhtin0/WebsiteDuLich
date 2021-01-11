@@ -345,6 +345,11 @@
 .location__body--wrap{
     height: 220px;
     position: relative;
+    cursor: pointer;
+}
+
+.location__body--wrap:hover{
+    opacity: 0.9;
 }
 
 .location img{
@@ -352,6 +357,12 @@
     width: 100%;
     object-fit: cover;
     border-radius: 4px;
+    overflow: hidden;
+}
+
+.location img:hover{
+    transform: scale(1.01);
+    transition: all .4s;
 }
 
 .location__body--wrap-div{
@@ -410,6 +421,7 @@
     background-color: var(--white-color);
     outline: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .sale__body--item:hover{

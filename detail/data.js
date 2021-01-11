@@ -79,9 +79,9 @@ const data = {
       url:
         "https://statics.vntrip.vn/data-v2/hotels/445/img_max/D6DDA7E033114FFCBC3D_49105261.jpg",
       address: "22 Lương Ngọc Quyến, Quận Hoàn Kiếm, Hà Nội",
-      realPrice: 360.0,
+      realPrice: 360000,
       discount: "-20%",
-      price: 280.0,
+      price: 280000,
       restaurant: false,
       pool: false,
       parking: false,
@@ -1095,8 +1095,7 @@ const data = {
       id: 61,
       place: "Lotte_Hotel_SG",
       name: "Lotte Hotel Sài Gòn",
-      url:
-        "http://127.0.0.1:5500/Image/ks1.jpg",
+      url: "http://127.0.0.1:5500/Image/ks1.jpg",
       address:
         "2A-4A Đ. Tôn Đức Thắng, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh",
       realPrice: 2905027,
@@ -1114,10 +1113,8 @@ const data = {
       id: 62,
       place: "Sun_River_DN",
       name: "Sun River Hotel",
-      url:
-        "http://127.0.0.1:5500/Image/ks3.jpg",
-      address:
-        "134-136 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng 550000",
+      url: "http://127.0.0.1:5500/Image/ks3.jpg",
+      address: "134-136 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng 550000",
       realPrice: "",
       discount: "",
       price: 949000,
@@ -1133,10 +1130,8 @@ const data = {
       id: 63,
       place: "The_Oriental_Jade",
       name: "Khách sạn The Oriental Jade",
-      url:
-        "http://127.0.0.1:5500/Image/ks2.jpg",
-      address:
-        "94 Hàng Trống, Hoàn Kiếm, Hà Nội",
+      url: "http://127.0.0.1:5500/Image/ks2.jpg",
+      address: "94 Hàng Trống, Hoàn Kiếm, Hà Nội",
       realPrice: 1606845,
       discount: "36%",
       price: 1036258,
@@ -1154,8 +1149,7 @@ const data = {
       name: "Khu nghỉ dưỡng Elwood Premier Phú Quốc",
       url:
         "https://i.vntrip.vn/275x140/smart/https://statics.vntrip.vn/data-v2/hotels/71942/img_max/71942_1572948599_garden_balcony.jpg",
-      address:
-        "Tổ 5, Ấp Ông Lang, xã Cửa Dương, H. Phú Quôc, tỉnh Kiên Giang",
+      address: "Tổ 5, Ấp Ông Lang, xã Cửa Dương, H. Phú Quôc, tỉnh Kiên Giang",
       realPrice: 1750000,
       discount: "55%",
       price: 787500,
@@ -1192,8 +1186,7 @@ const data = {
       name: "La Siesta Resort & Spa Hội An",
       url:
         "https://i.vntrip.vn/886x290/smart/https://statics.vntrip.vn/data-v2/hotels/10399/img_max/10399_1499770312_92092527.jpg",
-      address:
-        "134 Hùng Vương, Phường Thanh Hà, Thành phố Hội An, Quảng Nam",
+      address: "134 Hùng Vương, Phường Thanh Hà, Thành phố Hội An, Quảng Nam",
       realPrice: 1900000,
       discount: "10%",
       price: 1710000,
@@ -1209,8 +1202,7 @@ const data = {
       id: 67,
       place: "Swiss_DL",
       name: "Swiss-Belresort Tuyen Lam Dalat",
-      url:
-        "http://127.0.0.1:5500/Image/ks4.jpg",
+      url: "http://127.0.0.1:5500/Image/ks4.jpg",
       address:
         "số 7 và 8, KDL Hồ Tuyền Lâm, Phường 3, Thành phố Đà Lạt, Lâm Đồng 061000",
       realPrice: 3805380,
@@ -1228,10 +1220,8 @@ const data = {
       id: 68,
       place: "KK_SP",
       name: "KK Sapa Hotel",
-      url:
-        "http://127.0.0.1:5500/Image/ks5.jpg",
-      address:
-        "036 đường Mường Hoa, TT. Sa Pa, Sa Pa, Lào Cai 31700",
+      url: "http://127.0.0.1:5500/Image/ks5.jpg",
+      address: "036 đường Mường Hoa, TT. Sa Pa, Sa Pa, Lào Cai 31700",
       realPrice: 2606845,
       discount: "55%",
       price: 1173080,
@@ -1247,10 +1237,8 @@ const data = {
       id: 69,
       place: "Seashells_PQ",
       name: "Seashells Hotel & Spa Phú Quốc",
-      url:
-        "http://127.0.0.1:5500/Image/ks6.jpg",
-      address:
-        "1 Đường Võ Thị Sáu, Khu 1, Phú Quốc, tỉnh Kiên Giang",
+      url: "http://127.0.0.1:5500/Image/ks6.jpg",
+      address: "1 Đường Võ Thị Sáu, Khu 1, Phú Quốc, tỉnh Kiên Giang",
       realPrice: 2305327,
       discount: "40%",
       price: 1383196,
@@ -1288,7 +1276,9 @@ const renderHotel = (place) => {
   return arrPlace(place).map(
     (item, index) =>
       (hotel__list.innerHTML += `
-      <li class="hotel__list--item" key="hotel-list-${item.id}-${index}" onclick="pay(${item.id})">
+      <li class="hotel__list--item" key="hotel-list-${
+        item.id
+      }-${index}" onclick="pay(${item.id})">
             <img src=${item.url} class="hotel__list--item-img" >
             <div class="list__item--wrapper">
               <h3 class="list__item--wrapper-title">${item.name}</h3>
@@ -1342,13 +1332,11 @@ const renderHotel = (place) => {
             <div class="hotel__list--item-cost">
               <div class="list__item--wrapper-div">
                ${
-                 item.realPrice && (
-                   `<p class="hotel__list--item-realprice">${item.realPrice.toLocaleString()}đ</p>
+                 item.realPrice &&
+                 `<p class="hotel__list--item-realprice">${item.realPrice.toLocaleString()}đ</p>
                    <p class="hotel__list--item-discount">${item.discount}</p>
                    `
-                 )
                }
-                
               </div>
               <p class="hotel__list--item-price">${item.price.toLocaleString()}đ</p>
               <button class="hotel__list--item-btn">ĐẶT PHÒNG</button>
@@ -1372,7 +1360,309 @@ const pay = (id) => {
 };
 
 const starNumber = (number) => {
-  let rate = data.hotel.filter((item) => item.rate == number && item.place == localStorage.getItem("place"));
-  console.log(rate);
-}
+  let rate = data.hotel.filter(
+    (item) => item.rate == number && item.place == localStorage.getItem("place")
+  );
+  let a = "";
+  rate.map((item, index) => {
+    a += `
+        <li class="hotel__list--item" key="hotel-list-${
+          item.id
+        }-${index}" onclick="pay(${item.id})">
+        <img src=${item.url} class="hotel__list--item-img" >
+        <div class="list__item--wrapper">
+        <h3 class="list__item--wrapper-title">${item.name}</h3>
+        <div class="list__item--wrapper-div">
+        ${renderRate(item.rate)}
+        </div>
+        <div class="list__item--wrapper-div">
+                <i class="fas fa-map-marker-alt list__item--icon-location"></i>
+                <p class="list__item__wrapper-p">${item.address}</p>
+                </div>
+                <div class="list__item--wrapper-div">
+                ${
+                  item.restaurant
+                    ? '<i class="fas fa-utensils list__item--icon-hotel"></i><p class="list__item__wrapper-p">Nhà hàng</p>'
+                    : ""
+                }
+                ${
+                  item.pool
+                    ? '<i class="fas fa-swimming-pool list__item--icon-hotel"></i><p class="list__item__wrapper-p">Bể bơi</p>'
+                    : ""
+                }
+                ${
+                  item.parking
+                    ? '<img src="../Image/parking.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Chỗ đỗ xe</p>'
+                    : ""
+                }
+                ${
+                  item.laundry
+                    ? '<img src="../Image/giatui.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Giặt ủi</p>'
+                    : ""
+                }
+                ${
+                  item.spa
+                    ? '<i class="fas fa-spa list__item--icon-hotel"></i><p class="list__item__wrapper-p">Spa</p>'
+                    : ""
+                }
+                </div>
+                <div class="list__item--wrapper-div">
+                <p class="list__item--point">${item.point}</p>
+                <p class="list__item--evaluate">${
+                  item.point >= 9
+                    ? "Tuyệt vời"
+                    : item.point >= 7.5
+                    ? "Tốt"
+                    : item.point >= 5
+                    ? "Khá"
+                    : "Tệ"
+                }</p> 
+                  </div>
+                  </div>
+                  <div class="hotel__list--item-cost">
+                  <div class="list__item--wrapper-div">
+                  ${
+                    item.realPrice &&
+                    `<p class="hotel__list--item-realprice">${item.realPrice.toLocaleString()}đ</p>
+                   <p class="hotel__list--item-discount">${item.discount}</p>
+                   `
+                  }
+               </div>
+               <p class="hotel__list--item-price">${item.price.toLocaleString()}đ</p>
+               <button class="hotel__list--item-btn">ĐẶT PHÒNG</button>
+               </div>
+               </li>
+               `;
+    return (hotel__list.innerHTML = a);
+  });
+};
+
+const priceHotel1 = (x) => {
+  let price = data.hotel.filter((item) => item.price < x && item.place == localStorage.getItem("place"));
+  let a = "";
+  price.map((item, index) => {
+    a += `
+        <li class="hotel__list--item" key="hotel-list-${
+          item.id
+        }-${index}" onclick="pay(${item.id})">
+        <img src=${item.url} class="hotel__list--item-img" >
+        <div class="list__item--wrapper">
+        <h3 class="list__item--wrapper-title">${item.name}</h3>
+        <div class="list__item--wrapper-div">
+        ${renderRate(item.rate)}
+        </div>
+        <div class="list__item--wrapper-div">
+                <i class="fas fa-map-marker-alt list__item--icon-location"></i>
+                <p class="list__item__wrapper-p">${item.address}</p>
+                </div>
+                <div class="list__item--wrapper-div">
+                ${
+                  item.restaurant
+                    ? '<i class="fas fa-utensils list__item--icon-hotel"></i><p class="list__item__wrapper-p">Nhà hàng</p>'
+                    : ""
+                }
+                ${
+                  item.pool
+                    ? '<i class="fas fa-swimming-pool list__item--icon-hotel"></i><p class="list__item__wrapper-p">Bể bơi</p>'
+                    : ""
+                }
+                ${
+                  item.parking
+                    ? '<img src="../Image/parking.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Chỗ đỗ xe</p>'
+                    : ""
+                }
+                ${
+                  item.laundry
+                    ? '<img src="../Image/giatui.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Giặt ủi</p>'
+                    : ""
+                }
+                ${
+                  item.spa
+                    ? '<i class="fas fa-spa list__item--icon-hotel"></i><p class="list__item__wrapper-p">Spa</p>'
+                    : ""
+                }
+                </div>
+                <div class="list__item--wrapper-div">
+                <p class="list__item--point">${item.point}</p>
+                <p class="list__item--evaluate">${
+                  item.point >= 9
+                    ? "Tuyệt vời"
+                    : item.point >= 7.5
+                    ? "Tốt"
+                    : item.point >= 5
+                    ? "Khá"
+                    : "Tệ"
+                }</p> 
+                  </div>
+                  </div>
+                  <div class="hotel__list--item-cost">
+                  <div class="list__item--wrapper-div">
+                  ${
+                    item.realPrice &&
+                    `<p class="hotel__list--item-realprice">${item.realPrice.toLocaleString()}đ</p>
+                   <p class="hotel__list--item-discount">${item.discount}</p>
+                   `
+                  }
+               </div>
+               <p class="hotel__list--item-price">${item.price.toLocaleString()}đ</p>
+               <button class="hotel__list--item-btn">ĐẶT PHÒNG</button>
+               </div>
+               </li>
+               `;
+    return (hotel__list.innerHTML = a);
+  });
+};
+
+const priceHotel2 = (x,y) => {
+  let price = data.hotel.filter((item) => item.price >= x && item.price <= y && item.place == localStorage.getItem("place"));
+  let a = "";
+  price.map((item, index) => {
+    a += `
+        <li class="hotel__list--item" key="hotel-list-${
+          item.id
+        }-${index}" onclick="pay(${item.id})">
+        <img src=${item.url} class="hotel__list--item-img" >
+        <div class="list__item--wrapper">
+        <h3 class="list__item--wrapper-title">${item.name}</h3>
+        <div class="list__item--wrapper-div">
+        ${renderRate(item.rate)}
+        </div>
+        <div class="list__item--wrapper-div">
+                <i class="fas fa-map-marker-alt list__item--icon-location"></i>
+                <p class="list__item__wrapper-p">${item.address}</p>
+                </div>
+                <div class="list__item--wrapper-div">
+                ${
+                  item.restaurant
+                    ? '<i class="fas fa-utensils list__item--icon-hotel"></i><p class="list__item__wrapper-p">Nhà hàng</p>'
+                    : ""
+                }
+                ${
+                  item.pool
+                    ? '<i class="fas fa-swimming-pool list__item--icon-hotel"></i><p class="list__item__wrapper-p">Bể bơi</p>'
+                    : ""
+                }
+                ${
+                  item.parking
+                    ? '<img src="../Image/parking.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Chỗ đỗ xe</p>'
+                    : ""
+                }
+                ${
+                  item.laundry
+                    ? '<img src="../Image/giatui.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Giặt ủi</p>'
+                    : ""
+                }
+                ${
+                  item.spa
+                    ? '<i class="fas fa-spa list__item--icon-hotel"></i><p class="list__item__wrapper-p">Spa</p>'
+                    : ""
+                }
+                </div>
+                <div class="list__item--wrapper-div">
+                <p class="list__item--point">${item.point}</p>
+                <p class="list__item--evaluate">${
+                  item.point >= 9
+                    ? "Tuyệt vời"
+                    : item.point >= 7.5
+                    ? "Tốt"
+                    : item.point >= 5
+                    ? "Khá"
+                    : "Tệ"
+                }</p> 
+                  </div>
+                  </div>
+                  <div class="hotel__list--item-cost">
+                  <div class="list__item--wrapper-div">
+                  ${
+                    item.realPrice &&
+                    `<p class="hotel__list--item-realprice">${item.realPrice.toLocaleString()}đ</p>
+                   <p class="hotel__list--item-discount">${item.discount}</p>
+                   `
+                  }
+               </div>
+               <p class="hotel__list--item-price">${item.price.toLocaleString()}đ</p>
+               <button class="hotel__list--item-btn">ĐẶT PHÒNG</button>
+               </div>
+               </li>
+               `;
+    return (hotel__list.innerHTML = a);
+  });
+};
+
+const priceHotel3 = (x) => {
+  let price = data.hotel.filter((item) => item.price > x && item.place == localStorage.getItem("place"));
+  let a = "";
+  price.map((item, index) => {
+    a += `
+        <li class="hotel__list--item" key="hotel-list-${
+          item.id
+        }-${index}" onclick="pay(${item.id})">
+        <img src=${item.url} class="hotel__list--item-img" >
+        <div class="list__item--wrapper">
+        <h3 class="list__item--wrapper-title">${item.name}</h3>
+        <div class="list__item--wrapper-div">
+        ${renderRate(item.rate)}
+        </div>
+        <div class="list__item--wrapper-div">
+                <i class="fas fa-map-marker-alt list__item--icon-location"></i>
+                <p class="list__item__wrapper-p">${item.address}</p>
+                </div>
+                <div class="list__item--wrapper-div">
+                ${
+                  item.restaurant
+                    ? '<i class="fas fa-utensils list__item--icon-hotel"></i><p class="list__item__wrapper-p">Nhà hàng</p>'
+                    : ""
+                }
+                ${
+                  item.pool
+                    ? '<i class="fas fa-swimming-pool list__item--icon-hotel"></i><p class="list__item__wrapper-p">Bể bơi</p>'
+                    : ""
+                }
+                ${
+                  item.parking
+                    ? '<img src="../Image/parking.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Chỗ đỗ xe</p>'
+                    : ""
+                }
+                ${
+                  item.laundry
+                    ? '<img src="../Image/giatui.svg" alt="" class="list__item--icon-hotel"><p class="list__item__wrapper-p">Giặt ủi</p>'
+                    : ""
+                }
+                ${
+                  item.spa
+                    ? '<i class="fas fa-spa list__item--icon-hotel"></i><p class="list__item__wrapper-p">Spa</p>'
+                    : ""
+                }
+                </div>
+                <div class="list__item--wrapper-div">
+                <p class="list__item--point">${item.point}</p>
+                <p class="list__item--evaluate">${
+                  item.point >= 9
+                    ? "Tuyệt vời"
+                    : item.point >= 7.5
+                    ? "Tốt"
+                    : item.point >= 5
+                    ? "Khá"
+                    : "Tệ"
+                }</p> 
+                  </div>
+                  </div>
+                  <div class="hotel__list--item-cost">
+                  <div class="list__item--wrapper-div">
+                  ${
+                    item.realPrice &&
+                    `<p class="hotel__list--item-realprice">${item.realPrice.toLocaleString()}đ</p>
+                   <p class="hotel__list--item-discount">${item.discount}</p>
+                   `
+                  }
+               </div>
+               <p class="hotel__list--item-price">${item.price.toLocaleString()}đ</p>
+               <button class="hotel__list--item-btn">ĐẶT PHÒNG</button>
+               </div>
+               </li>
+               `;
+    return (hotel__list.innerHTML = a);
+  });
+};
+
 
