@@ -127,12 +127,15 @@
 }
 
 /* Content infor */
+.grid__content--wrapper1{
+    width: 70%;
+}
+
 .grid__content{
     display: flex;
 }
 
 .content__infor{
-    width: 70%;
     height: fit-content;
     padding: 20px;
     background-color: var(--white-color);
@@ -243,6 +246,12 @@
     display: flex;
 }
 
+.content__infor--div--sub2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .content__infor--div-left{
     display: flex;
     justify-content: space-between;
@@ -302,11 +311,8 @@
 }
 
 .content__infor--btn{
-    display: flex;
-    margin-left: auto;
     align-items: center;
-    justify-content: center;
-    width: 200px;
+    /* width: 200px; */
     height: 40px;
     font-size: 1.8rem;
     border-radius: 4px;
@@ -323,8 +329,12 @@
 
 
 /* Content Pay */
-.content__pay{
+.grid__content--wrapper2{
     width: 30%;
+}
+
+.content__pay{
+    /* width: 30%; */
 }
 
 .content__pay .content__title--sub{
@@ -451,6 +461,86 @@
     display: none;
 }
 
+/* ..content__infor--active3 */
+.content__infor--active3{
+    display: none;
+    margin-top: 20px;
+}
+
+.evaluate__list{
+    margin-top: 30px;
+    padding: 0 30px;
+    list-style: none;
+}
+
+.evaluate__list--item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.evaluate__list--item-name{
+    width: 41px;
+    margin: 0 12px 0 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.evaluate__list--item-input{
+    height: 30px;
+    flex: 1;
+    padding-left: 12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.evaluate__list--item-input1{
+    height: 60px;
+}
+
+.evaluate__list--item-input::placeholder{
+    color: #ccc;
+}
+
+.evaluate__icon{
+    font-size: 1.8rem;
+}
+
+.evaluate__icon--plus{
+    color: #84a94c;
+}
+
+.evaluate__icon--minus{
+    color: #d0011b;
+}
+
+.evaluate__choose{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.evaluate__choose--btn{
+    width: 80px;
+}
+
+.evaluate__choose--cancel{
+    background-color: #ccc;
+    margin-right: 20px;
+}
+
+.evaluate__choose--back1{
+    margin-left: 30px;
+}
+
+
+/* Pay-list */
 .pay__list{
     padding-left: 0;
     list-style: none;

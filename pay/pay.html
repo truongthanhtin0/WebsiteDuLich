@@ -66,9 +66,10 @@
               </div>
         </div>
         <div class="grid__content">
+          <div class="grid__content--wrapper1">
             <div class="content__infor content__infor--active1">
               <h1 class="content__title">Thông tin đặt phòng</h1>
-              <h3 class="content__title--sub">Thông tin người đặt phòng</h3>
+              <h3 class="content__title--sub">Thông tin khách hàng</h3>
               <div class="content__infor--wrapper">
                 <div class="content__infor--div">
                   <div class="content__infor--div-sub">
@@ -126,7 +127,10 @@
                 <input type="checkbox" name="" class="content__infor--wrapper-checkbox">
                 <p class="content__infor--wrapper-confirm">Tôi là người nhận phòng</p>
               </div>
-              <button class="content__infor--btn" onclick="getDataInput()">Tiếp tục</button>
+              <div class="content__infor--div--sub2">
+                <button class="content__infor--btn" onclick="getEvaluate()">Đánh giá</button>
+                <button class="content__infor--btn" onclick="getDataInput()">Tiếp tục đặt phòng</button>
+              </div>
             </div>
             <div class="content__infor content__infor--active2">
               <h1 class="content__title">THÔNG TIN THANH TOÁN</h1>
@@ -191,59 +195,53 @@
                 <input type="checkbox" name="" class="content__infor--wrapper-checkbox">
                 <p class="content__infor--wrapper-confirm">Tôi xác nhận đã đọc và đồng ý với <span class="content__infor--wrapper-span">Điều khoản và Điều kiện</span> của Trip.</p>
               </div>
-              <button class="content__infor--btn">Tiếp tục</button>
+              <div class="content__infor--div--sub2">
+                <button class="content__infor--btn  evaluate__choose--btn evaluate__choose--cancel evaluate__choose--back2" onclick="getBack2()">Quay lại</button>
+                <button class="content__infor--btn">Tiếp tục</button>
+              </div>
             </div>
-            <div class="content__pay">
-              <div class="content__pay1">
-                <!-- <h3 class="content__title--sub">Thông tin đơn đặt phòng</h3>
-                <img src="https://i.travelapi.com/hotels/7000000/6950000/6946000/6945951/2ec3d362_b.jpg" alt="" class="content__pay--img">
-                <div class="content__infor--div-sub">
-                  <p class="pay__hotel--title">Khách sạn Hà Nội LuLLaby</p>
-                  <div class="content__infor--div-sub">
-                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                    <i class="fas fa-star pay__icon--star pay__icon--star-active"></i>
-                    <i class="fas fa-star pay__icon--star"></i>
+            <div class="content__infor content__infor--active3">
+              <h1 class="content__title">Đánh giá khách sạn</h1>
+              <h3 class="content__title--sub">Nội dung đánh giá</h3>
+              <div class="evaluate">
+                <ul class="evaluate__list">
+                  <li class="evaluate__list--item">
+                    <p class="evaluate__list--item-name">Ý kiến:</p>
+                    <input type="text" class="evaluate__list--item-input evaluate__list--item-input1" placeholder="Mời bạn để lại đánh giá, bình luận (Vui lòng nhập tiếng việt có dấu)">
+                  </li>
+                  <li class="evaluate__list--item">
+                    <i class="fas fa-plus-square evaluate__icon evaluate__icon--plus evaluate__list--item-name"></i>
+                    <input type="text" class="evaluate__list--item-input" placeholder="Những mặt tích cực của khách sạn (Nếu có)">
+                  </li>
+                  <li class="evaluate__list--item">
+                    <i class="fas fa-minus-square evaluate__icon evaluate__icon--minus evaluate__list--item-name"></i>
+                    <input type="text" class="evaluate__list--item-input" placeholder="Những mặt khách sạn cần khắc phục (Nếu có)">
+                  </li>
+                  <li class="evaluate__list--item">
+                    <p class="evaluate__list--item-name">Điểm:</p>
+                    <input type="text" class="evaluate__list--item-input" placeholder="Mời bạn để lại số điểm đánh giá (Thang điểm 10, ví dụ: 9)">
+                  </li>
+                </ul>
+                <div class="evaluate__choose">
+                  <button class="content__infor--btn  evaluate__choose--btn evaluate__choose--cancel evaluate__choose--back1" onclick="getBack1()">Quay lại</button>
+                  <div class="evaluate__choose--wrapprer">
+                    <button class="content__infor--btn evaluate__choose--btn evaluate__choose--cancel">Hủy</button>
+                    <button class="content__infor--btn evaluate__choose--btn evaluate__choose--send">Gửi</button>
                   </div>
                 </div>
-                <div class="content__infor--div-sub">
-                  <i class="fas fa-map-marker-alt pay__icon--location"></i>
-                  <p class="content__pay--p">Ngõ Trạm, Hàng Bông, Hoàn Kiếm, Hà Nội, Việt Nam</p>
-                </div>
-                <div class="content__infor--wrapper">
-                  <p class="content__pay--p">Giá phòng</p>
-                  <p class="content__pay--p">445.000đ/1 đêm</p>
-                </div>
-                <div class="content__infor--wrapper">
-                  <p class="content__pay--p">Ngày nhận phòng</p>
-                  <p class="content__pay--p">17/12/2020</p>
-                </div>
-                <div class="content__infor--wrapper">
-                  <p class="content__pay--p">Ngày trả phòng</p>
-                  <p class="content__pay--p">19/12/2020</p>
-                </div>
-                <div class="content__infor--wrapper">
-                  <p class="content__pay--p">Số đêm</p>
-                  <p class="content__pay--p">1</p>
-                </div>
-                <div class="content__infor--wrapper content__infor--wrapper-active">
-                  <p class="content__pay--p content__pay--p-price">Giá từ khách sạn</p>
-                  <p class="content__pay--p content__pay--p-price1">450.000đ</p>
-                </div>
-                <div class="content__infor--wrapper">
-                  <p class="content__pay--p content__pay--p-price">VAT và dịch vụ khách sạn</p>
-                  <p class="content__pay--p content__pay--p-price2">50.000đ</p>
-                </div>
-                <div class="content__infor--wrapper content__infor--wrapper-active1">
-                  <p class="content__pay--p content__pay--p-sum">Tổng tiền:</p>
-                  <p class="content__pay--p content__pay--p-sum1">500.000đ</p>
-                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid__content--wrapper2">
+            <div class="content__pay">
+              <div class="content__pay1">
+               
               </div>
               <div class="content__pay2">
                 
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -458,14 +456,14 @@
         </div>
       </div>
 
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="./pay.js"></script>
     <script src="../base.js"></script>

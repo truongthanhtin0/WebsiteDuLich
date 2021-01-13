@@ -83,7 +83,7 @@ content__pay1.innerHTML += `
 const content__pay2 = document.querySelector(".content__pay2");
 
 content__pay2.innerHTML += `
-  <h3 class="content__title--sub">Thông tin đặt phòng</h3>
+  <h3 class="content__title--sub">Thông tin khách hàng</h3>
   <div class="content__infor--wrapper">
     <p class="content__pay--p">Người đặt phòng</p>
     <p class="content__pay--p input__hoten">${localStorage.getItem("input__hoten")}</p>
@@ -125,5 +125,48 @@ const getDataInput = () => {
   content__pay2.style.display = "block";
 }
 
+const active3 = document.querySelector(".content__infor--active3");
+const dateCome = document.querySelector("#search__datetime--come");
+const dateLeave = document.querySelector("#search__datetime--leave");
 
+
+const getEvaluate = () => {
+  let input__hoten = document.querySelector("#input__Hoten").value;
+  localStorage.setItem("input__hoten", input__hoten);
+  let input__cmnd = document.querySelector("#input__cmnd").value;
+  localStorage.setItem("input__cmnd", input__cmnd);
+  let input__sdt = document.querySelector("#input__sdt").value;
+  localStorage.setItem("input__sdt", input__sdt);
+  let input__email = document.querySelector("#input__email").value;
+  localStorage.setItem("input__email", input__email);
+
+  $(".input__hoten").text(`${localStorage.getItem("input__hoten")}`)
+  $(".input__cmnd").text(`${localStorage.getItem("input__cmnd")}`)
+  $(".input__sdt").text(`${localStorage.getItem("input__sdt")}`)
+  $(".input__email").text(`${localStorage.getItem("input__email")}`)
+
+  content__pay1.style.display = "none";
+  dateCome.style.display = "none";
+  dateLeave.style.display = "none";
+  content__pay2.style.display = "block";
+  active3.style.display = "block";
+}
+
+const evaluateBack = document.querySelector(".evaluate__choose--back1");
+
+const getBack1 = () => {
+  content__pay1.style.display = "block";
+  dateCome.style.display = "block";
+  dateLeave.style.display = "block";
+  active3.style.display = "none";
+  content__pay2.style.display = "none";
+}
+
+const payActive2Back = document.querySelector(".evaluate__choose--back2");
+
+const getBack2 = () => {
+  content__infor__active1.style.display = "block";
+  content__infor__active2.style.display = "none";
+  content__pay2.style.display = "none";
+}
 
