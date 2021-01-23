@@ -1,0 +1,8 @@
+.content__infor--div{
+    display: flex;
+    align-items: center;
+}
+
+.content__infor--div-sub p {
+    margin-right: 12px;
+}
